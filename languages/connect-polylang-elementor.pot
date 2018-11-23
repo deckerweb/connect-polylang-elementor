@@ -1,0 +1,154 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Connect Polylang to Elementor\n"
+"POT-Creation-Date: 2018-11-23 23:49+0100\n"
+"PO-Revision-Date: 2018-11-23 22:17+0100\n"
+"Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
+"Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: connect-polylang-elementor.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. translators: Title attribute for Polylang settings link
+#: includes/admin-extras.php:36
+msgid "Polylang Languages Setup"
+msgstr ""
+
+#: includes/admin-extras.php:37
+msgctxt "Link title attribute for Polylang settings"
+msgid "Languages"
+msgstr ""
+
+#. translators: Title attribute for Elementor My Templates link
+#: includes/admin-extras.php:45
+msgid "Elementor My Templates"
+msgstr ""
+
+#: includes/admin-extras.php:46
+msgctxt "Link title attribute for Elementor My Templates"
+msgid "Templates"
+msgstr ""
+
+#. translators: Plugins page listing
+#: includes/admin-extras.php:101
+msgctxt "Plugins page listing"
+msgid "Support"
+msgstr ""
+
+#. translators: Plugins page listing
+#: includes/admin-extras.php:104
+msgctxt "Plugins page listing"
+msgid "Facebook Group"
+msgstr ""
+
+#. translators: Plugins page listing
+#: includes/admin-extras.php:107
+msgctxt "Plugins page listing"
+msgid "Translations"
+msgstr ""
+
+#. translators: Plugins page listing
+#: includes/admin-extras.php:110
+msgctxt "Plugins page listing"
+msgid "Donate"
+msgstr ""
+
+#. Author of the plugin/theme
+#: includes/functions-global.php:33
+msgid "David Decker - DECKERWEB"
+msgstr ""
+
+#: includes/items-elementor-finder.php:52
+msgctxt "Category title in Elementor Finder"
+msgid "Polylang - Multilingual Plugin"
+msgstr ""
+
+#: includes/items-elementor-finder.php:70
+msgctxt "Item title part in Elementor Finder"
+msgid "Polylang"
+msgstr ""
+
+#: includes/items-elementor-finder.php:73
+msgctxt "Item title part in Elementor Finder"
+msgid "Polylang Language"
+msgstr ""
+
+#: includes/items-elementor-finder.php:89
+msgid "Edit this language"
+msgstr ""
+
+#: includes/items-elementor-finder.php:103
+msgctxt "Title in Elementor Finder"
+msgid "Setup languages"
+msgstr ""
+
+#: includes/items-elementor-finder.php:107
+msgid "All languages your website appears in"
+msgstr ""
+
+#: includes/items-elementor-finder.php:112
+msgctxt "Title in Elementor Finder"
+msgid "String Translations"
+msgstr ""
+
+#: includes/items-elementor-finder.php:116
+msgid "From Widgets and other website parts"
+msgstr ""
+
+#: includes/items-elementor-finder.php:121
+msgctxt "Title in Elementor Finder"
+msgid "Settings"
+msgstr ""
+
+#: includes/items-elementor-finder.php:125
+msgid "Plugin's settings, enable/ disable modules"
+msgstr ""
+
+#: includes/items-elementor-finder.php:130
+msgctxt "Title in Elementor Finder"
+msgid "Plugin Documentation"
+msgstr ""
+
+#: includes/items-elementor-finder.php:134
+msgid "FAQ, Knowledge Base and Documentation"
+msgstr ""
+
+#: includes/items-elementor-finder.php:146
+msgctxt "Title in Elementor Finder"
+msgid "Support Forum"
+msgstr ""
+
+#: includes/items-elementor-finder.php:150
+msgid "Free support on WordPress.org"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Connect Polylang to Elementor"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/deckerweb/connect-polylang-elementor"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Connect Polylang multilingual plugin with Elementor Page Builder: Use "
+"languages as conditions in Elementor Pro Theme Builder. Plus: Polylang "
+"links added to the Elementor Finder feature."
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://deckerweb.de/"
+msgstr ""

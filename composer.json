@@ -1,0 +1,22 @@
+{
+  "name": "deckerweb/connect-polylang-elementor",
+  "description": "WordPress plugin that connect Polylang with Elementor - use language conditions in Elementor Pro Theme Builder.",
+  "keywords": ["elementor", "polylang", "multilingual", "languages", "templates", "conditions"],
+  "type": "wordpress-plugin",
+  "homepage": "https://github.com/deckerweb/connect-polylang-elementor",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "David Decker",
+      "homepage": "https://deckerweb.de/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/deckerweb/connect-polylang-elementor/issues",
+    "source": "https://github.com/deckerweb/connect-polylang-elementor"
+  },
+  "require": {
+    "php": ">=5.6"
+  }
+}
