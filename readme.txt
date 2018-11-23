@@ -1,7 +1,7 @@
 === Connect Polylang Elementor - Language Conditions for Elementor Theme Builder ===
-Contributors: daveshine, deckerweb, wpautobahn
+Contributors: daveshine, p4fbradjohnson, deckerweb, wpautobahn
 Donate link: https://www.paypal.me/deckerweb
-Tags: elementor, polylang, multilingual, languages, templates, conditions, deckerweb
+Tags: elementor, polylang, multilingual, languages, templates, conditions, finder, deckerweb
 Requires at least: 4.7
 Tested up to: 4.9.8
 Requires PHP: 5.6
