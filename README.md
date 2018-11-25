@@ -1,4 +1,4 @@
-# Connect Polylang Elementor - Language Conditions for Elementor Theme Builder 
+# Connect Polylang Elementor - Language Switcher & Template Translations 
 **Contributors:** [daveshine](https://profiles.wordpress.org/daveshine), [p4fbradjohnson](https://profiles.wordpress.org/p4fbradjohnson), [deckerweb](https://profiles.wordpress.org/deckerweb), [wpautobahn](https://profiles.wordpress.org/wpautobahn)  
 **Donate link:** https://www.paypal.me/deckerweb  
 **Tags:** elementor, polylang, multilingual, languages, templates, conditions, finder, deckerweb  
