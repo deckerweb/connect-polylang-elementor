@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Connect Polylang to Elementor\n"
-"POT-Creation-Date: 2018-11-23 23:48+0100\n"
-"PO-Revision-Date: 2018-11-23 23:48+0100\n"
+"POT-Creation-Date: 2018-11-25 01:17+0100\n"
+"PO-Revision-Date: 2018-11-25 01:18+0100\n"
 "Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language: de_DE\n"
@@ -70,69 +70,276 @@ msgstr "Spenden"
 msgid "David Decker - DECKERWEB"
 msgstr "David Decker - DECKERWEB"
 
-#: includes/items-elementor-finder.php:52
+#: modules/dynamic-tags/manager.php:27
+msgctxt "Elementor Dynamic Tags group title"
+msgid "Polylang Languages"
+msgstr "Polylang Sprachen"
+
+#: modules/dynamic-tags/polylang-current-language-code.php:46
+msgctxt "Elementor Dynamic Tag title"
+msgid "Current Language Code"
+msgstr "Aktuelle Sprache: Sprachcode"
+
+#: modules/dynamic-tags/polylang-current-language-flag.php:46
+msgctxt "Elementor Dynamic Tag title"
+msgid "Current Language Flag"
+msgstr "Aktuelle Sprache: Flagge"
+
+#: modules/dynamic-tags/polylang-current-language-name.php:46
+msgctxt "Elementor Dynamic Tag title"
+msgid "Current Language Name"
+msgstr "Aktuelle Sprache: Name der Sprache"
+
+#: modules/dynamic-tags/polylang-current-language-url.php:46
+msgctxt "Elementor Dynamic Tag title"
+msgid "Current Language URL"
+msgstr "Aktuelle Sprache: URL"
+
+#: modules/dynamic-tags/polylang-language-names.php:46
+msgctxt "Elementor Dynamic Tag title"
+msgid "Language Names"
+msgstr "Sprachnamen"
+
+#: modules/dynamic-tags/polylang-language-names.php:108
+#: modules/widgets/polylang-language-switcher.php:468
+msgid "Language Name"
+msgstr "Name der Sprache"
+
+#: modules/finder/polylang-plugin.php:36
 msgctxt "Category title in Elementor Finder"
 msgid "Polylang - Multilingual Plugin"
 msgstr "Polylang - Mehrsprachigkeits-Plugin"
 
-#: includes/items-elementor-finder.php:70
+#: modules/finder/polylang-plugin.php:57
 msgctxt "Item title part in Elementor Finder"
 msgid "Polylang"
 msgstr "Polylang"
 
-#: includes/items-elementor-finder.php:73
+#: modules/finder/polylang-plugin.php:60
+msgctxt "Item title part in Elementor Finder"
+msgid "Polylang Pro"
+msgstr "Polylang Pro"
+
+#: modules/finder/polylang-plugin.php:64
+msgctxt "Item title part in Elementor Finder"
+msgid "Website Language"
+msgstr "Sprache der Webseite"
+
+#: modules/finder/polylang-plugin.php:67
 msgctxt "Item title part in Elementor Finder"
 msgid "Polylang Language"
 msgstr "Polylang Sprache"
 
-#: includes/items-elementor-finder.php:89
+#: modules/finder/polylang-plugin.php:70
+msgctxt "Item title part in Elementor Finder"
+msgid "Polylang Pro Language"
+msgstr "Polylang Pro Sprache"
+
+#: modules/finder/polylang-plugin.php:87
+msgid "View website in this language"
+msgstr "Website in dieser Sprache anzeigen"
+
+#: modules/finder/polylang-plugin.php:106
 msgid "Edit this language"
 msgstr "Diese Sprache bearbeiten"
 
-#: includes/items-elementor-finder.php:103
+#: modules/finder/polylang-plugin.php:120
 msgctxt "Title in Elementor Finder"
 msgid "Setup languages"
 msgstr "Sprachen einrichten"
 
-#: includes/items-elementor-finder.php:107
+#: modules/finder/polylang-plugin.php:124
 msgid "All languages your website appears in"
 msgstr "Alle Sprachen, in denen Ihre Website erscheint"
 
-#: includes/items-elementor-finder.php:112
+#: modules/finder/polylang-plugin.php:129
 msgctxt "Title in Elementor Finder"
 msgid "String Translations"
 msgstr "Zeichenketten übersetzen"
 
-#: includes/items-elementor-finder.php:116
+#: modules/finder/polylang-plugin.php:133
 msgid "From Widgets and other website parts"
 msgstr "Von Widgets und anderen Website-Bereichen"
 
-#: includes/items-elementor-finder.php:121
+#: modules/finder/polylang-plugin.php:138
 msgctxt "Title in Elementor Finder"
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: includes/items-elementor-finder.php:125
+#: modules/finder/polylang-plugin.php:142
 msgid "Plugin's settings, enable/ disable modules"
 msgstr "Plugin-Einstellungen, Aktivieren/ Deaktivieren von Modulen"
 
-#: includes/items-elementor-finder.php:130
+#: modules/finder/polylang-plugin.php:147
 msgctxt "Title in Elementor Finder"
 msgid "Plugin Documentation"
 msgstr "Plugin-Dokumentation"
 
-#: includes/items-elementor-finder.php:134
+#: modules/finder/polylang-plugin.php:151
 msgid "FAQ, Knowledge Base and Documentation"
 msgstr "FAQ, Wissensdatenbank und Dokumentation"
 
-#: includes/items-elementor-finder.php:146
+#: modules/finder/polylang-plugin.php:163
 msgctxt "Title in Elementor Finder"
 msgid "Support Forum"
 msgstr "Support-Forum"
 
-#: includes/items-elementor-finder.php:150
+#: modules/finder/polylang-plugin.php:167
 msgid "Free support on WordPress.org"
 msgstr "Kostenloser Support auf WordPress.org"
+
+#: modules/widgets/polylang-language-switcher.php:61
+msgctxt "Elementor widget title"
+msgid "Polylang Switcher"
+msgstr "Polylang Sprachwähler"
+
+#: modules/widgets/polylang-language-switcher.php:167
+msgid "Content"
+msgstr "Inhalt"
+
+#: modules/widgets/polylang-language-switcher.php:174
+msgid "Layout"
+msgstr "Layout"
+
+#: modules/widgets/polylang-language-switcher.php:178
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: modules/widgets/polylang-language-switcher.php:179
+msgid "Vertical"
+msgstr "Vertikal"
+
+#: modules/widgets/polylang-language-switcher.php:189
+msgid "Align"
+msgstr "Ausrichtung"
+
+#: modules/widgets/polylang-language-switcher.php:193
+msgid "Left"
+msgstr "Links"
+
+#: modules/widgets/polylang-language-switcher.php:197
+msgid "Center"
+msgstr "Zentriert"
+
+#: modules/widgets/polylang-language-switcher.php:201
+msgid "Right"
+msgstr "Rechts"
+
+#: modules/widgets/polylang-language-switcher.php:205
+msgid "Stretch"
+msgstr "Strecken"
+
+#: modules/widgets/polylang-language-switcher.php:217
+msgid "Skip languages with no translations"
+msgstr "Sprachen ohne Übersetzungen überspringen"
+
+#: modules/widgets/polylang-language-switcher.php:228
+msgid "Show Country Flag"
+msgstr "Landesflagge anzeigen"
+
+#: modules/widgets/polylang-language-switcher.php:238
+msgid "Show Language Name"
+msgstr "Sprachname anzeigen"
+
+#: modules/widgets/polylang-language-switcher.php:248
+msgid "Show Language Code"
+msgstr "Sprachcode anzeigen"
+
+#: modules/widgets/polylang-language-switcher.php:262
+#: modules/widgets/polylang-language-switcher.php:576
+msgid "Main Menu"
+msgstr "Hauptmenü"
+
+#: modules/widgets/polylang-language-switcher.php:272
+msgid "Normal"
+msgstr "Normal"
+
+#: modules/widgets/polylang-language-switcher.php:288
+#: modules/widgets/polylang-language-switcher.php:325
+#: modules/widgets/polylang-language-switcher.php:361
+msgid "Text Color"
+msgstr "Textfarbe"
+
+#: modules/widgets/polylang-language-switcher.php:306
+msgid "Hover"
+msgstr "Hover"
+
+#: modules/widgets/polylang-language-switcher.php:345
+msgid "Active"
+msgstr "Aktiv"
+
+#: modules/widgets/polylang-language-switcher.php:377
+msgid "Horizontal Padding"
+msgstr "Horizontaler Innenabstand"
+
+#: modules/widgets/polylang-language-switcher.php:394
+msgid "Vertical Padding"
+msgstr "Vertikaler Innenabstand"
+
+#: modules/widgets/polylang-language-switcher.php:410
+msgid "Space Between"
+msgstr "Abstand dazwischen"
+
+#: modules/widgets/polylang-language-switcher.php:441
+msgid "Country Flag"
+msgstr "Landesflagge"
+
+#: modules/widgets/polylang-language-switcher.php:452
+#: modules/widgets/polylang-language-switcher.php:489
+#: modules/widgets/polylang-language-switcher.php:526
+msgid "Margin"
+msgstr "Außenabstand"
+
+#: modules/widgets/polylang-language-switcher.php:479
+#: modules/widgets/polylang-language-switcher.php:516
+msgid "Uppercase"
+msgstr "Großbuchstaben"
+
+#: modules/widgets/polylang-language-switcher.php:505
+msgid "Language Code"
+msgstr "Sprachcode"
+
+#: modules/widgets/polylang-language-switcher.php:538
+msgid "Text before"
+msgstr "Text davor"
+
+#: modules/widgets/polylang-language-switcher.php:546
+msgid "Text after"
+msgstr "Text danach"
+
+#: modules/widgets/polylang-language-switcher.php:558
+msgid "Helpful Information"
+msgstr "Hilfreiche Informationen"
+
+#: modules/widgets/polylang-language-switcher.php:565
+msgid "Country Flags"
+msgstr "Landesflaggen"
+
+#. translators: %1$s - <code>16px</code> (width 16px) / %2$s - <code>11px</code> (height 11px)
+#: modules/widgets/polylang-language-switcher.php:568
+#, php-format
+msgid ""
+"Country flags are by default used from Polylang plugin and have the static "
+"size of %1$s wide and %2$s high."
+msgstr ""
+"Länderflaggen werden standardmäßig vom Polylang-Plugin verwendet und haben "
+"die statische Größe von %1$s breit und %2$s hoch."
+
+#: modules/widgets/polylang-language-switcher.php:575
+msgid "Style"
+msgstr "Stile"
+
+#: modules/widgets/polylang-language-switcher.php:577
+msgid "Tab: \"Active\""
+msgstr "Tab: „Aktiv“"
+
+#: modules/widgets/polylang-language-switcher.php:578
+msgid ""
+"This marks the language of currently viewed content - on the frontend. In "
+"Elementor Editor Panel this could be different."
+msgstr ""
+"Dies markiert die Sprache des aktuell angezeigten Inhalts - im Frontend. Im "
+"Elementor Editor-Panel kann dies anders sein."
 
 #. Plugin Name of the plugin/theme
 msgid "Connect Polylang to Elementor"
@@ -155,6 +362,15 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://deckerweb.de/"
 msgstr "https://deckerweb.de/"
+
+#~ msgid "Polylang Language Names"
+#~ msgstr "Polylang Sprachnamen"
+
+#~ msgid "Before"
+#~ msgstr "Davor"
+
+#~ msgid "After"
+#~ msgstr "Danach"
 
 #~ msgctxt "Category title in Elementor Finder"
 #~ msgid "Polylang"

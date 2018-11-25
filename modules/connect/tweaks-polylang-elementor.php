@@ -1,6 +1,6 @@
 <?php
 
-// includes/tweaks-polylang-elementor
+// modules/connect/tweaks-polylang-elementor
 
 /**
  * Prevent direct access to this file.

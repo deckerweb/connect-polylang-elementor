@@ -16,9 +16,17 @@ Connect Polylang with Elementor - use language conditions in Elementor Pro Theme
 
 
 ### What the Plugin Does 
-* Language conditions (powered by Polylang) will appear in Elementor Pro conditions when using the Theme Builder
-* Adds Polylang languages, admin settings links, plus support resources as quick jump links to the Elementor Finder feature (Elementor v2.3.0+)
-* No settings page - just works out of the box.
+* Elementor Templates will become translateable: the set conditions in *Elementor Pro Theme Builder* will now be applied also for templates in another (Polylang) language (happens under the hood)
+* **Usage Example:**
+ * Make a header template in Elementor, set display conditions, apply this to one language (English for example)
+ * Make a second header template in Elementor, set NO display conditions for this one, but apply to another Polylang language (German for example), meaning to link those languages/templates in Polylang
+ * Result: when viewing in frontend the proper English content appears with the English header template, translated content in German appears with the German header template
+* No further settings needed for these Template tweaks - just works out of the box! All the heavy lifting happens under the hood.
+
+
+### Plus: Even More Features
+* **Native Elementor Widget**: Polylang Language Switcher Widget to easily built a nice language switcher menu and have more styling options for non-coders at hand
+* **Elementor Finder integration**: Adds Polylang languages, admin settings links, plus support resources as quick jump links to the Elementor Finder feature (Elementor v2.3.0+)
 
 
 ### Further Plugin Info 
@@ -82,10 +90,19 @@ Connect Polylang with Elementor - use language conditions in Elementor Pro Theme
 ## Frequently Asked Questions 
 
 
-### Where is the plugin's settings page? 
+### Where is the plugin's settings page?
+
 This plugin has NO settings page, as it does not need one. All it does works just under the hood. Activate the plugin. Done.
 
-However, you need to save your template conditions in the Elementor Theme Builder (via Elementor Pro) once, so that the language conditions will show up next time you are editing those conditions. This 2-step usage is currently a technical limitation.
+(If there will be settings needed in the future, we might add options in later plugin versions.)
+
+
+
+### Any known limitations?
+
+Yes, the default flags in Polylang are sized 16px wide and 11px high. This migt be sufficient for most use cases still but bigger image sizes are not possible without loss of quality.
+
+Polylang has feature for custom flags. If integration is possible, we are considering supporting it in the language switcher widget in a future plugin version.
 
 
 

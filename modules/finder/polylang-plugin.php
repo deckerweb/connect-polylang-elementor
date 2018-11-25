@@ -1,6 +1,6 @@
 <?php
 
-// includes/items-elementor-finder
+// modules/finder/polylang-plugin
 
 /**
  * Prevent direct access to this file.
@@ -12,22 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-add_action( 'elementor/finder/categories/init', 'ddw_cpel_elementor_finder_add_items' );
-/**
- * Add "Polylang" category to the Elementor Finder (Elementor v2.3.0+).
- *
- * @since 1.0.0
- *
- * @param object $categories_manager
- */
-function ddw_cpel_elementor_finder_add_items( $categories_manager ) {
-
-	/** Add the Polyang category */
-	$categories_manager->add_category( 'connect-polylang-elementor', new DDW_Polylang_Connect_Finder_Category() );
-
-}  // end function
-
-
 /**
  * Add the Toolbar Extras category to the Elementor Finder.
  *   - Settings pages
@@ -36,12 +20,12 @@ function ddw_cpel_elementor_finder_add_items( $categories_manager ) {
  *
  * @since 1.4.0
  */
-class DDW_Polylang_Connect_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
+class DDW_Polylang_Plugin_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
 
 	/**
 	 * Get title.
 	 *
-	 * @since  1.4.0
+	 * @since 1.0.0
 	 *
 	 * @access public
 	 *
@@ -57,26 +41,36 @@ class DDW_Polylang_Connect_Finder_Category extends \Elementor\Core\Common\Module
 	/**
 	 * Get category items.
 	 *
-	 * @since  1.0.0
+	 * @since 1.0.0
 	 *
 	 * @access public
 	 *
-	 * @uses   pll_languages_list() Holds array of Polylang languages.
+	 * @uses ddw_cpel_is_polylang_pro_active()
+	 * @uses pll_languages_list() Holds array of Polylang languages.
 	 *
-	 * @param  array $options
+	 * @param array $options
 	 * @return array $items Filterable array of additional Finder items.
 	 */
 	public function get_category_items( array $options = [] ) {
 
-		/** Set "Polylang" string */
+		/** Set "Polylang (Pro)" string */
 		$string_polylang = _x( 'Polylang', 'Item title part in Elementor Finder', 'connect-polylang-elementor' ) . ': ';
+
+		if ( ddw_cpel_is_polylang_pro_active() ) {
+			$string_polylang = _x( 'Polylang Pro', 'Item title part in Elementor Finder', 'connect-polylang-elementor' ) . ': ';
+		}
 
 		/** Set "Website Language" string */
 		$string_website_lang = _x( 'Website Language', 'Item title part in Elementor Finder', 'connect-polylang-elementor' ) . ': ';
 
-		/** Set "Polylang Language" string */
+		/** Set "Polylang (Pro) Language" string */
 		$string_polylang_lang = _x( 'Polylang Language', 'Item title part in Elementor Finder', 'connect-polylang-elementor' ) . ': ';
 
+		if ( ddw_cpel_is_polylang_pro_active() ) {
+			$string_polylang_lang = _x( 'Polylang Pro Language', 'Item title part in Elementor Finder', 'connect-polylang-elementor' ) . ': ';
+		}
+
+		/** Set actions */
 		$action_name = 'view';
 		$action_icon = 'eye';
 
@@ -99,6 +93,10 @@ class DDW_Polylang_Connect_Finder_Category extends \Elementor\Core\Common\Module
 					],
 				],
 			];
+
+		}  // end foreach
+
+		foreach ( $languages as $lang_data ) {
 
 			$items[ 'polylang-language-' . $lang_data->slug ] = [
 				'title'       => $string_polylang_lang . $lang_data->name,
