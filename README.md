@@ -88,7 +88,9 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: It helps s
 1. Install using the WordPress built-in Plugin installer (via **Plugins > Add New** - search for `connect polylang elementor`), or extract the ZIP file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to **Polylang > Settings > Custom post types and Taxonomies**, enable the "My Templates" post type (Elementor)
-4. Next time you set or edit display conditions in Elementor, the language conditions (via Polylang) should appear
+4. Assign languages to your pages/ posts/ Elementor templates
+5. For Elementor templates: set display conditions in Elementor for one template only (your main language is recommended) - templates in the other languages will then get loaded via this plugin magically! :)
+6. Additionally use the native Elementor Widget: Polylang Switcher
 
 
 
