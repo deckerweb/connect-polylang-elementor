@@ -114,25 +114,21 @@ add_action( 'init', 'ddw_cpel_setup_plugin' );
  */
 function ddw_cpel_setup_plugin() {
 
-	/** Include Elementor Finder functions */
-	if ( ddw_cpel_is_elementor_active() ) {
+	/** Load features that require Polylang & Elementor active */
+	if ( ddw_cpel_is_polylang_active() && ddw_cpel_is_elementor_active() ) {
+
 		require_once( CPEL_PLUGIN_DIR . 'modules/finder/manager.php' );
-		//require_once( CPEL_PLUGIN_DIR . 'modules/widgets/polylang-language-switcher.php' );
 		require_once( CPEL_PLUGIN_DIR . 'modules/widgets/register-widget.php' );
 
-		//new \LanguageSwitcherForElementor\Plugin();
 		new \DDW_Connect_Polylang_Elementor\Register_Widget();
 
-	}  // end if
+		/** Load features that require Elementor Pro */
+		if ( ddw_cpel_is_elementor_pro_active() ) {
+			require_once( CPEL_PLUGIN_DIR . 'modules/connect/tweaks-polylang-elementor.php' );
+			require_once( CPEL_PLUGIN_DIR . 'modules/dynamic-tags/manager.php' );
+		}
 
-	/** Include Polylang/Elementor tweaks */
-	if ( ddw_cpel_is_polylang_active()
-		&& ddw_cpel_is_elementor_pro_active()
-		&& ddw_cpel_is_elementor_active()
-	) {
-		require_once( CPEL_PLUGIN_DIR . 'modules/connect/tweaks-polylang-elementor.php' );
-		require_once( CPEL_PLUGIN_DIR . 'modules/dynamic-tags/manager.php' );
-	}
+	}  // end if
 
 	/** Include admin helper functions */
 	if ( is_admin() ) {
@@ -155,23 +151,3 @@ function ddw_cpel_setup_plugin() {
 	}  // end if
 
 }  // end function
-
-
-//add_action( 'admin_head', 'ddw_debugging_admin_20181126_1249' );
-//add_action( 'wp_head', 'ddw_debugging_admin_20181126_1249' );
-function ddw_debugging_admin_20181126_1249() {
-
-			/** Get the available languages for a switcher */
-		$languages = pll_the_languages( array( 'raw' => 1 ) );
-
-
-	echo '<div class="admin notice error"><p>';
-
-	echo 'Debugging: ' . '';
-
-	echo '<br /><br />Array-Inhalt:<br />';
-	print_r( $languages );
-
-	echo '</p></div>';
-
-}  // end debugging function
