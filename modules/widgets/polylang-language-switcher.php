@@ -369,7 +369,6 @@ class Polylang_Language_Switcher extends Widget_Base {
 				],
 				'selectors' => [
 					'{{WRAPPER}} .plsfe-menu .plsfe-item:hover,
-					{{WRAPPER}} .plsfe-menu .plsfe-item.plsfe-item__active,
 					{{WRAPPER}} .plsfe-menu .plsfe-item.highlighted,
 					{{WRAPPER}} .plsfe-menu .plsfe-item:focus' => 'color: {{VALUE}}',
 				],
@@ -382,6 +381,15 @@ class Polylang_Language_Switcher extends Widget_Base {
 			'tab_menu_item_active',
 			[
 				'label' => __( 'Active', 'connect-polylang-elementor' ),
+			]
+		);
+
+		$this->add_control(
+			'info_menu_item_active',
+			[
+				'type'            => Controls_Manager::RAW_HTML,
+				'raw'             => __( 'This controls the item in the Switcher for the current active language', 'connect-polylang-elementor' ),
+				'content_classes' => 'elementor-control-field-description cpel-info-menu-item-active',
 			]
 		);
 
@@ -402,6 +410,18 @@ class Polylang_Language_Switcher extends Widget_Base {
 				'default'   => '',
 				'selectors' => [
 					'{{WRAPPER}} .plsfe-menu .plsfe-item.plsfe-item__active' => 'color: {{VALUE}}',
+				],
+			]
+		);
+
+		$this->add_control(
+			'color_menu_item_active_hover',
+			[
+				'label'     => __( 'Text Hover Color', 'connect-polylang-elementor' ),
+				'type'      => Controls_Manager::COLOR,
+				'default'   => '',
+				'selectors' => [
+					'{{WRAPPER}} .plsfe-menu .plsfe-item.plsfe-item__active:hover' => 'color: {{VALUE}}',
 				],
 			]
 		);

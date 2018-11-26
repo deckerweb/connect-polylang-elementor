@@ -33,10 +33,12 @@ function ddw_cpel_prepare_render_polylang_switcher() {
 
 //add_filter( 'elementor/widget/render_content', 'ddw_cpel_render_polylang_switcher', 10, 2 );
 /**
- * Render the Polylang Switcher widget only on the frontend when the display conditions of the widget's settings are met:
- *   - Display for "All languages"
- *   - Display only for the chosen language (which then must also the be current
- *     language of the browser content)
+ * Render the Polylang Switcher widget only on the frontend when the display
+ *   conditions of the widget's settings are met:
+ *   1) Display for "All languages"
+ *     or
+ *   2) Display only for the chosen language (which then must also the be current
+ *      language of the browser content)
  *
  * @since  1.0.0
  *

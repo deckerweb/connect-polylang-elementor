@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *   - Plugin resources
  *   - Add-On settings
  *
- * @since 1.4.0
+ * @since 1.0.0
  */
 class DDW_Polylang_Plugin_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
 

@@ -1,4 +1,4 @@
-# Connect Polylang Elementor - Language Switcher & Template Tweaks 
+# Polylang Connect for Elementor - Language Switcher & Template Tweaks 
 **Contributors:** [daveshine](https://profiles.wordpress.org/daveshine), [p4fbradjohnson](https://profiles.wordpress.org/p4fbradjohnson), [deckerweb](https://profiles.wordpress.org/deckerweb), [wpautobahn](https://profiles.wordpress.org/wpautobahn)  
 **Donate link:** https://www.paypal.me/deckerweb  
 **Tags:** elementor, polylang, multilingual, language switcher, languages, templates, widget, finder, dynamic tags, deckerweb  
