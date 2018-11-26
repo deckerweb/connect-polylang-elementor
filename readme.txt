@@ -96,6 +96,11 @@ This plugin has NO settings page, as it does not need one. All it does works jus
 (If there will be settings needed in the future, we might add options in later plugin versions.)
 
 
+= Is Polylang Pro supported? =
+Yes, it is! :)
+All features of "Connect Polylang Elementor" work with both, *Polylang* (free) AND *Polylang Pro* (Premium).
+
+
 = Are custom flags supported? =
 In general, [custom flags](https://polylang.pro/doc/can-i-use-my-own-flags-for-the-language-switcher/) are supported in the Polylang Switcher Elementor widget and in the Dynamic Tag (Current Language Flag).
 However, the default flags in Polylang are sized `16px` wide and `11px` high, this automatically applies to custom flags - as it is fully handled internally by Polylang.
@@ -103,9 +108,8 @@ However, the default flags in Polylang are sized `16px` wide and `11px` high, th
 To use a different size for custom flags we are trying to find ways to implement this for Elementor in future versions of this plugin.
 
 
-= Is Polylang Pro supported? =
-Yes, it is! :)
-All features of "Connect Polylang Elementor" work with both, *Polylang* (free) AND *Polylang Pro* (Premium).
+= Typography and uppercase settings? =
+In the Polylang Switcher Elementor widget there are typography settings available for the Switcher menu items. These settings are CSS based of course, and applied "globally" to the various states they are for: normal, hover, active (current language). The available toggles for uppercase are done code-wise and therefore have a lower priority - this means the CSS always takes over, if wanted. That way you are most flexible with quick settings (toggles) but have all styling options at hand if needed.
 
 
 = Other recommended plugins for multilingual websites? =
