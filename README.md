@@ -19,9 +19,9 @@ Connect Polylang with Elementor - show correct Templates, plus Elementor languag
 * **Show correct Template** (for different languages): It makes it so that Polylang can show the correct Elementor template that will be shown on the front end. Before the plugin, Elementor did not show the correct template.
 * Beyond enabling the Elementor post type in Polylang settings, plus assigning every post/page/template to a language, no further settings needed for these Template tweaks. It just works out of the box. All the heavy lifting happens under the hood.
 * **Usage Example:**
- * Make a header template in Elementor, set display conditions in Elementor panel, assign this to one language (English for example)
- * Make a second header template in Elementor, set NO display conditions for this one, but assign to another Polylang language (German for example), meaning to link those languages/templates in Polylang
- * Result: when viewing in frontend the proper English content appears with the English header template, translated content in German appears with the German header template
+  * Make a header template in Elementor, set display conditions in Elementor panel, assign this to one language (English for example)
+  * Make a second header template in Elementor, set NO display conditions for this one, but assign to another Polylang language (German for example), meaning to link those languages/templates in Polylang
+  * Result: when viewing in frontend the proper English content appears with the English header template, translated content in German appears with the German header template
 
 
 ### Plus: Even More Features 
