@@ -25,13 +25,13 @@ add_action( 'elementor/finder/categories/init', 'ddw_cpel_elementor_finder_add_i
 function ddw_cpel_elementor_finder_add_items( $categories_manager ) {
 
 	/** Include the Finder Category class files */
-	require_once( CPEL_PLUGIN_DIR . 'modules/finder/polylang-plugin.php' );
-	//require_once( CPEL_PLUGIN_DIR . 'modules/finder/cpel-plugin.php' );
+	require_once( CPEL_PLUGIN_DIR . 'modules/finder/plugin-polylang.php' );
+	require_once( CPEL_PLUGIN_DIR . 'modules/finder/plugin-cpel.php' );
 
 	/** Add the Polyang Plugin category */
 	$categories_manager->add_category( 'polylang-plugin', new DDW_Polylang_Plugin_Finder_Category() );
 
 	/** Add the our own CPEL Plugin category */
-	//$categories_manager->add_category( 'connect-polylang-elementor', new DDW_CPEL_Plugin_Finder_Category() );
+	$categories_manager->add_category( 'connect-polylang-elementor', new DDW_CPEL_Plugin_Finder_Category() );
 
 }  // end function

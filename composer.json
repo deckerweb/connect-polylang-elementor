@@ -1,6 +1,6 @@
 {
   "name": "deckerweb/connect-polylang-elementor",
-  "description": "WordPress plugin that connects Polylang with Elementor Page Builder - make Elementor Pro Templates translateable. Adds a Language Switcher widget to Elementor.",
+  "description": "WordPress plugin that connects the Polylang multilingual plugin with Elementor Page Builder: It helps showing the correct language templates, especially with Elementor Pro Theme Builder. Plus: native Polylang Language Switcher Elementor widget, new Dynamic Tags, and Polylang links added to the Elementor Finder feature.",
   "keywords": ["elementor", "polylang", "multilingual", "languages", "templates", "conditions"],
   "type": "wordpress-plugin",
   "homepage": "https://github.com/deckerweb/connect-polylang-elementor",

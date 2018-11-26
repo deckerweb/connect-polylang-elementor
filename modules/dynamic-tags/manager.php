@@ -31,14 +31,14 @@ function ddw_cpel_register_dynamic_tags_polylang_languages( $dynamic_tags ) {
 	require_once( CPEL_PLUGIN_DIR . 'modules/dynamic-tags/polylang-language-names.php' );
 	require_once( CPEL_PLUGIN_DIR . 'modules/dynamic-tags/polylang-current-language-name.php' );
 	require_once( CPEL_PLUGIN_DIR . 'modules/dynamic-tags/polylang-current-language-code.php' );
-	//require_once( CPEL_PLUGIN_DIR . 'modules/dynamic-tags/polylang-current-language-url.php' );
+	require_once( CPEL_PLUGIN_DIR . 'modules/dynamic-tags/polylang-current-language-url.php' );
 	require_once( CPEL_PLUGIN_DIR . 'modules/dynamic-tags/polylang-current-language-flag.php' );
 
 	/** Register the tags */
 	$dynamic_tags->register_tag( 'DDW_Polylang_Language_Names_Elementor_Dynamic_Tag' );
 	$dynamic_tags->register_tag( 'DDW_Polylang_Current_Language_Name_Elementor_Dynamic_Tag' );
 	$dynamic_tags->register_tag( 'DDW_Polylang_Current_Language_Code_Elementor_Dynamic_Tag' );
-	//$dynamic_tags->register_tag( 'DDW_Polylang_Current_Language_URL_Elementor_Dynamic_Tag' );
+	$dynamic_tags->register_tag( 'DDW_Polylang_Current_Language_URL_Elementor_Dynamic_Tag' );
 	$dynamic_tags->register_tag( 'DDW_Polylang_Current_Language_Flag_Elementor_Dynamic_Tag' );
 
 }  // end function

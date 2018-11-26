@@ -99,7 +99,6 @@ class Register_Widget {
 	 */
 	private function includes() {
 
-		//require __DIR__ . '/polylang-language-switcher.php';
 		require_once( CPEL_PLUGIN_DIR . 'modules/widgets/polylang-language-switcher.php' );
 
 	}  // end method

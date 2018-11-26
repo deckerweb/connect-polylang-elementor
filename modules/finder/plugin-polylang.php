@@ -1,6 +1,6 @@
 <?php
 
-// modules/finder/polylang-plugin
+// modules/finder/plugin-polylang
 
 /**
  * Prevent direct access to this file.

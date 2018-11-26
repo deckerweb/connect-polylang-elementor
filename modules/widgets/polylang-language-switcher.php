@@ -23,9 +23,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * Language Switcher
+ * Polylang Switcher
  *
- * Elementor widget for Language Switcher.
+ * Elementor widget for Polylang Language Switcher.
+ *
+ * Note: Code based on Widget class of plugin "Language Switcher for Elementor",
+ *       licensed under GPLv2 or later.
+ * @author Solitweb
+ * @link https://solitweb.be/
  *
  * @since 1.0.0
  */
@@ -107,7 +112,7 @@ class Polylang_Language_Switcher extends Widget_Base {
 	 */
 	public function get_keywords() {
 
-		return [ 'languages', 'switcher', 'polylang', 'flags', 'countries', 'country', 'wpml' ];
+		return [ 'languages', 'switcher', 'polylang', 'multilingual', 'flags', 'countries', 'country', 'wpml' ];
 
 	}  // end method
 
@@ -212,13 +217,23 @@ class Polylang_Language_Switcher extends Widget_Base {
 		);
 
 		$this->add_control(
-			'skip_missing',
+			'hide_current',
 			[
-				'label'        => __( 'Skip languages with no translations', 'connect-polylang-elementor' ),
+				'label'        => __( 'Hide the current language', 'connect-polylang-elementor' ),
 				'type'         => Controls_Manager::SWITCHER,
-				'return_value' => 1,
-				'default'      => 0,
+				'return_value' => 'yes',
+				'default'      => '',
 				'separator'    => 'before',
+			]
+		);
+
+		$this->add_control(
+			'hide_missing',
+			[
+				'label'        => __( 'Hide languages with no translation', 'connect-polylang-elementor' ),
+				'type'         => Controls_Manager::SWITCHER,
+				'return_value' => 'yes',
+				'default'      => '',
 			]
 		);
 
@@ -249,6 +264,30 @@ class Polylang_Language_Switcher extends Widget_Base {
 				'type'         => Controls_Manager::SWITCHER,
 				'return_value' => 'yes',
 				'default'      => '',
+			]
+		);
+
+			/** Create language drop-down for the select control */
+			$languages = pll_the_languages( array( 'raw' => 1 ) );
+			$dropdown  = [];
+
+			foreach ( $languages as $language ) {
+				
+				$dropdown[ $language[ 'slug' ] ] = $language[ 'name' ];
+
+			}  // end foreach
+
+			$first_key[ 'all' ] = __( 'All languages', 'connect-polylang-elementor' );
+
+			$dropdown = array_merge( $first_key, $dropdown );
+
+		$this->add_control(
+			'plsfe_widget_display',
+			[
+				'label'   => __( 'Display widget for:', 'connect-polylang-elementor' ),
+				'type'    => Controls_Manager::SELECT,
+				'default' => 'all',
+				'options' => $dropdown,
 			]
 		);
 
@@ -625,8 +664,13 @@ class Polylang_Language_Switcher extends Widget_Base {
 			/** Loop through all languages */
 			foreach ( $languages as $language ) {
 
-				/** Skip languages that have no translations available */
-				if ( $settings[ 'skip_missing' ] && $language[ 'no_translation' ] ) {
+				/** Optional: Hide the current language */
+				if ( 'yes' === $settings[ 'hide_current' ] && $language[ 'current_lang' ] ) {
+					continue;
+				}
+
+				/** Optional: Hide languages that have no translations available */
+				if ( 'yes' === $settings[ 'hide_missing' ] && $language[ 'no_translation' ] ) {
 					continue;
 				}
 
@@ -638,7 +682,7 @@ class Polylang_Language_Switcher extends Widget_Base {
 
 				/** Build the language switcher menu output */
 				echo '<li class="plsfe-menu-item">';
-		
+
 					echo ( $language[ 'current_lang' ] ) ? '<a href="' . $language[ 'url' ] . '" class="plsfe-item plsfe-item__active">' : '<a href="' . $language[ 'url' ] . '" class="plsfe-item">';
 
 						echo $settings[ 'show_country_flag' ] ? '<span class="plsfe-country-flag"><img src="' . $language[ 'flag' ] . '" alt="' . $language_code . '" width="16" height="11" /></span>' : '';
@@ -672,6 +716,6 @@ class Polylang_Language_Switcher extends Widget_Base {
 	 *
 	 * @access protected
 	 */
-	protected function _content_template() {}  // end method
+	protected function _content_template() { }  // end method
 
 }  // end of class

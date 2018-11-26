@@ -2,6 +2,11 @@
  * // assets/css/plsfe-frontend
  * @package Connect Polylang Elementor - Assets
  * @since   1.0.0
+ *
+ * Note: Code based on Widget class of plugin "Language Switcher for Elementor",
+ *       licensed under GPLv2 or later.
+ * @author Solitweb
+ * @link https://solitweb.be/
  */
 
 .plsfe-switcher .plsfe-menu {

@@ -96,8 +96,23 @@ class DDW_Polylang_Current_Language_URL_Elementor_Dynamic_Tag extends \Elementor
 	*/
 	public function get_value( array $options = [] ) {
 	
-		return pll_get_post( get_the_ID() );
-		//echo esc_url( pll_current_language( $field = 'url' ) );
+		/** Get all Polylang languages */
+		$languages = pll_the_languages( array( 'raw' => 1 ) );
+
+		if ( ! empty( $languages ) ) {
+
+			foreach ( $languages as $language ) {
+
+				/** If current language found, stop the loop */
+				if ( $language[ 'current_lang' ] ) {
+					break;
+				}
+
+			}  // end foreach
+
+		}  // end if
+
+		return $language[ 'url' ];
 
 	}  // end method
 

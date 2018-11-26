@@ -1,7 +1,7 @@
-=== Connect Polylang Elementor - Language Switcher & Template Translations ===
+=== Connect Polylang Elementor - Language Switcher & Template Tweaks ===
 Contributors: daveshine, p4fbradjohnson, deckerweb, wpautobahn
 Donate link: https://www.paypal.me/deckerweb
-Tags: elementor, polylang, multilingual, languages, templates, conditions, finder, deckerweb
+Tags: elementor, polylang, multilingual, language switcher, languages, templates, widget, finder, dynamic tags, deckerweb
 Requires at least: 4.7
 Tested up to: 4.9.8
 Requires PHP: 5.6
@@ -9,22 +9,22 @@ Stable tag: 1.0.0
 License: GPL-2.0-or-later
 License URI: https://opensource.org/licenses/GPL-2.0
 
-Connect Polylang with Elementor - make Elementor Pro Templates translateable.
+Connect Polylang with Elementor - show correct Templates, plus Elementor language switcher widget.
 
 == Description ==
 
-= What the Plugin Does: Make Templates Translateable =
-* Elementor Templates will become translateable: the set conditions in *Elementor Pro Theme Builder* will now be applied also for templates in another (Polylang) language
+= What the Plugin Does =
+* **Show correct Template** (for different languages): It makes it so that Polylang can show the correct Elementor template that will be shown on the front end. Before the plugin, Elementor did not show the correct template.
+* Beyond enabling the Elementor post type in Polylang settings, plus assigning every post/page/template to a language, no further settings needed for these Template tweaks. It just works out of the box. All the heavy lifting happens under the hood.
 * **Usage Example:**
- * Make a header template in Elementor, set display conditions, apply this to one language (English for example)
- * Make a second header template in Elementor, set NO display conditions for this one, but apply to another Polylang language (German for example), meaning to link those languages/templates in Polylang
+ * Make a header template in Elementor, set display conditions in Elementor panel, assign this to one language (English for example)
+ * Make a second header template in Elementor, set NO display conditions for this one, but assign to another Polylang language (German for example), meaning to link those languages/templates in Polylang
  * Result: when viewing in frontend the proper English content appears with the English header template, translated content in German appears with the German header template
-* No settings page for the Template tweaks - just works out of the box! All happens under the hood.
 
 = Plus: Even More Features =
-* **Polylang Language Switcher Widget**: A native Elementor Widget to easily built a nice language switcher menu and have more styling options for non-coders at hand
-* **Elementor Finder integration**: Adds Polylang languages, admin settings links, plus support resources as quick jump links to the Elementor Finder feature (Elementor v2.3.0+)
-* **Dynamic Tags** in Elementor Pro: Polylang Language Names (all registered/active) / Current Language Name / Current Language Code / Current Language Flag (image)
+* **Polylang Language Switcher Widget**: A native Elementor Widget to easily built a nice language switcher menu and have **more styling options** for non-coders at hand
+* **Elementor Finder integration**: Adds Polylang languages, admin settings links, plus support resources as quick jump links to the Elementor Finder feature (Elementor v2.3.0+) - so you can navigate more quickly from whereever you are
+* **Dynamic Tags** in Elementor Pro: Polylang Language Names (all registered/active) / Current Language Name / Current Language Code / Current Language Flag (image) / Current Language URL
 
 = Further Plugin Info =
 * More features might be added in the future.
@@ -59,7 +59,7 @@ Connect Polylang with Elementor - make Elementor Pro Templates translateable.
 
 * WordPress version 4.7 or higher
 * [Elementor](https://wordpress.org/plugins/elementor/) and [Polylang](https://wordpress.org/plugins/polylang/) plugins - free versions from WordPress.org Plugin Directory
-* **PLUS:** *Elementor Pro* which is needed for Theme Building possibilities. This is a paid premium product by Elementor LTD, [available via elementor.com](https://toolbarextras.com/go/elementor-pro/)
+* **Optional:** *Elementor Pro* which is needed for Theme Building possibilities (Header templates etc.). This is a paid premium product by Elementor LTD, [available via elementor.com](https://toolbarextras.com/go/elementor-pro/)
 * PHP version 5.6 or higher
 * MySQL version 5.0 or higher
 
@@ -72,11 +72,23 @@ Connect Polylang with Elementor - make Elementor Pro Templates translateable.
 
 1. Install using the WordPress built-in Plugin installer (via **Plugins > Add New** - search for `connect polylang elementor`), or extract the ZIP file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Go to **Elementor > My Templates**, choose a template, save its display conditions
+3. Go to **Polylang > Settings > Custom post types and Taxonomies**, enable the "My Templates" post type (Elementor)
 4. Next time you set or edit display conditions in Elementor, the language conditions (via Polylang) should appear
 
 
 == Frequently Asked Questions ==
+
+= Correct Elementor template does not show up? =
+Every page/ post/ template must be assigned a language for this to work. This is standard PolyLang procedure but it should be noted in case "it doesnt work".
+
+Also, for Elementor Templates, the post type must be enabled for Polylang support: Go to **Polylang > Settings > Custom post types and Taxonomies**, enable the "My Templates" post type (Elementor).
+
+
+= Where is the Elementor Widget to found? =
+It's in the widget category "General Elements". Plus, if Elementor Pro is active and you're editing a template, the widget additionally appears in the "Site" widget category.
+
+When searching for widgets type "polylang" or "languages" and it will show up immediately! ;-)
+
 
 = Where is the plugin's settings page? =
 This plugin has NO settings page, as it does not need one. All it does works just under the hood. Activate the plugin. Done.
@@ -84,10 +96,27 @@ This plugin has NO settings page, as it does not need one. All it does works jus
 (If there will be settings needed in the future, we might add options in later plugin versions.)
 
 
-= Any known limitations? =
-Yes, the default flags in Polylang are sized 16px wide and 11px high. This migt be sufficient for most use cases still but bigger image sizes are not possible without loss of quality.
+= Are custom flags supported? =
+In general, [custom flags](https://polylang.pro/doc/can-i-use-my-own-flags-for-the-language-switcher/) are supported in the Polylang Switcher Elementor widget and in the Dynamic Tag (Current Language Flag).
+However, the default flags in Polylang are sized `16px` wide and `11px` high, this automatically applies to custom flags - as it is fully handled internally by Polylang.
 
-Polylang has feature for custom flags. If integration is possible, we are considering supporting it in the language switcher widget in a future plugin version.
+To use a different size for custom flags we are trying to find ways to implement this for Elementor in future versions of this plugin.
+
+
+= Is Polylang Pro supported? =
+Yes, it is! :)
+All features of "Connect Polylang Elementor" work with both, *Polylang* (free) AND *Polylang Pro* (Premium).
+
+
+= Other recommended plugins for multilingual websites? =
+There are quite a few:
+
+* [**Country Flags for Elementor**](https://wordpress.org/plugins/country-flags-for-elementor/) - Native Elementor widget
+* [**Polylang Pro** (Premium)](https://polylang.pro/downloads/polylang-pro/) - The official premium version with more features, plus premium support
+* [**Polylang for WooCommerce** (Premium)](https://polylang.pro/downloads/polylang-for-woocommerce/) - Makes WooCommerce multilingual - official Polylang Add-On
+* [**Lingotek Translation**](https://wordpress.org/plugins/lingotek-translation/) - Native Polylang integration - Lingotek brings convenient cloud-based localization and translation for WordPress
+* [**Integrate Gravity Forms + Polylang**](https://wordpress.org/plugins/integrate-gravity-forms-polylang/) - Add form titles, descriptions, field labels, etc. to Polylang string translations
+* [**WPML to Polylang**](https://wordpress.org/plugins/wpml-to-polylang/) - From the Polylang developer himself
 
 
 = More info on Translations? =
@@ -119,6 +148,11 @@ Just released into the wild.
 
 == Donate ==
 Enjoy using *Connect Polylang Elementor*? [**Please consider making a donation**](https://www.paypal.me/deckerweb) to support the project's continued development.
+
+== Credits ==
+Credit where credit is due. The following code/ classes, all licensed under the GPL. Note: Credit is also referenced in the code doc block inline where used.
+
+* Polylang Switcher class (Elementor Widget) and its CSS based on widget from plugin "Language Switcher for Elementor" by Solitweb (GPLv2 or later)
 
 == Plugin Links ==
 * [Translations (WP GlotPress Platform)](https://translate.wordpress.org/projects/wp-plugins/connect-polylang-elementor)

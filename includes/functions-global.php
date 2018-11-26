@@ -12,6 +12,73 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
+add_action( 'wp_head', 'ddw_cpel_prepare_render_polylang_switcher' );
+/**
+ * Prepare for tweaks to the rendering of the Polylang Switcher widget.
+ *   Note: Using in-between step via action hook 'wp_head' to enforce the
+ *         rendering tweaks only on frontend - where only we want them to happen.
+ *
+ * @since 1.0.0
+ *
+ * @see   ddw_cpel_render_polylang_switcher()
+ */
+function ddw_cpel_prepare_render_polylang_switcher() {
+
+	if ( function_exists( 'pll_current_language' ) ) {
+		add_filter( 'elementor/widget/render_content', 'ddw_cpel_render_polylang_switcher', 10, 2 );
+	}
+
+}  // end function
+
+
+//add_filter( 'elementor/widget/render_content', 'ddw_cpel_render_polylang_switcher', 10, 2 );
+/**
+ * Render the Polylang Switcher widget only on the frontend when the display conditions of the widget's settings are met:
+ *   - Display for "All languages"
+ *   - Display only for the chosen language (which then must also the be current
+ *     language of the browser content)
+ *
+ * @since  1.0.0
+ *
+ * @uses   pll_current_language() Provides slug current language.
+ *
+ * @param  string                 $widget_content  The content of the widget.
+ * @param  \Elementor\Widget_Base $widget_instance The instance of the widget.
+ * @return string Tweaked content of the widget.
+ */
+function ddw_cpel_render_polylang_switcher( $widget_content, $widget_instance ) {
+
+	/** Bail early if no rendering tweaks wanted */
+	if ( 'polylang-language-switcher' !== $widget_instance->get_name()
+		|| \Elementor\Plugin::$instance->editor->is_edit_mode()
+		|| is_admin()
+	) {
+		return $widget_content;
+	}
+
+	/** Get the widget settings */
+	$display = sanitize_key( $widget_instance->get_settings_for_display( 'plsfe_widget_display' ) );
+
+	/** Get current language */
+	$current_lang = sanitize_key( pll_current_language( 'slug' ) );
+
+	/**
+	 * Only render the widget on the frontend if "All languages" is set, or if
+	 *   the current language matches the chosen language from the setting.
+	 */
+	if ( 'all' === $display || $current_lang === $display ) {
+
+		return $widget_content;
+
+	} elseif ( $current_lang !== $display ) {
+
+		return '<!-- hidden widget -->';
+
+	}  // end if
+
+}  // end function
+
+
 /**
  * Setting internal plugin helper values.
  *
