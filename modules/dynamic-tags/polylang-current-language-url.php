@@ -90,7 +90,7 @@ class DDW_Polylang_Current_Language_URL_Elementor_Dynamic_Tag extends \Elementor
 	* @since 1.0.0
 	* @access public
 	*
-	* @uses pll_current_language()
+	* @uses pll_the_languages()
 	*
 	* @return void
 	*/
@@ -112,7 +112,7 @@ class DDW_Polylang_Current_Language_URL_Elementor_Dynamic_Tag extends \Elementor
 
 		}  // end if
 
-		return $language[ 'url' ];
+		return esc_url_raw( $language[ 'url' ] );
 
 	}  // end method
 

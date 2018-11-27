@@ -18,7 +18,7 @@ add_action( 'elementor/dynamic_tags/register_tags', 'ddw_cpel_register_dynamic_t
  *
  * @since 1.0.0
  *
- * @uses \Elementor\Plugin()
+ * @uses  \Elementor\Plugin()
  */
 function ddw_cpel_register_dynamic_tags_polylang_languages( $dynamic_tags ) {
 

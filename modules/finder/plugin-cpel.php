@@ -13,10 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
- * Add the Toolbar Extras category to the Elementor Finder.
- *   - Settings pages
+ * Add the "Polylang Connect for Elementor" category to the Elementor Finder.
  *   - Plugin resources
- *   - Add-On settings
  *
  * @since 1.0.0
  */

@@ -94,7 +94,9 @@ add_filter( 'elementor/theme/get_location_templates/template_id', 'ddw_cpel_chan
  *
  * @since  1.0.0
  *
- * @param  string $post_id
+ * @uses   pll_get_post()
+ *
+ * @param  int $post_id ID of the current post.
  * @return string Based translation, the translation ID, or the original Post ID.
  */
 function ddw_cpel_change_template_based_on_language( $post_id ) {

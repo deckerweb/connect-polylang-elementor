@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Connect Polylang to Elementor\n"
-"POT-Creation-Date: 2018-11-26 22:34+0100\n"
-"PO-Revision-Date: 2018-11-26 22:34+0100\n"
+"POT-Creation-Date: 2018-11-27 08:49+0100\n"
+"PO-Revision-Date: 2018-11-27 08:50+0100\n"
 "Last-Translator: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language-Team: David Decker DECKERWEB.de -- https://deckerweb.de/\n"
 "Language: de_DE\n"
@@ -101,7 +101,7 @@ msgid "Language Names"
 msgstr "Sprachnamen"
 
 #: modules/dynamic-tags/polylang-language-names.php:108
-#: modules/widgets/polylang-language-switcher.php:529
+#: modules/widgets/polylang-language-switcher.php:527
 msgid "Language Name"
 msgstr "Name der Sprache"
 
@@ -286,7 +286,7 @@ msgid "Display widget for:"
 msgstr "Widget anzeigen für:"
 
 #: modules/widgets/polylang-language-switcher.php:301
-#: modules/widgets/polylang-language-switcher.php:637
+#: modules/widgets/polylang-language-switcher.php:635
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
@@ -295,8 +295,8 @@ msgid "Normal"
 msgstr "Normal"
 
 #: modules/widgets/polylang-language-switcher.php:327
-#: modules/widgets/polylang-language-switcher.php:366
-#: modules/widgets/polylang-language-switcher.php:410
+#: modules/widgets/polylang-language-switcher.php:364
+#: modules/widgets/polylang-language-switcher.php:408
 msgid "Text Color"
 msgstr "Textfarbe"
 
@@ -304,67 +304,67 @@ msgstr "Textfarbe"
 msgid "Hover"
 msgstr "Hover"
 
-#: modules/widgets/polylang-language-switcher.php:385
+#: modules/widgets/polylang-language-switcher.php:383
 msgid "Active"
 msgstr "Aktiv"
 
-#: modules/widgets/polylang-language-switcher.php:393
+#: modules/widgets/polylang-language-switcher.php:391
 msgid "This controls the item in the Switcher for the current active language"
-msgstr "Dies steuert das Element im Switcher für die aktuell aktive Sprache."
+msgstr "Dies steuert das Element im Switcher für die aktuell aktive Sprache"
 
-#: modules/widgets/polylang-language-switcher.php:422
+#: modules/widgets/polylang-language-switcher.php:420
 msgid "Text Hover Color"
 msgstr "Textfarbe bei Hover"
 
-#: modules/widgets/polylang-language-switcher.php:438
+#: modules/widgets/polylang-language-switcher.php:436
 msgid "Horizontal Padding"
 msgstr "Horizontaler Innenabstand"
 
-#: modules/widgets/polylang-language-switcher.php:455
+#: modules/widgets/polylang-language-switcher.php:453
 msgid "Vertical Padding"
 msgstr "Vertikaler Innenabstand"
 
-#: modules/widgets/polylang-language-switcher.php:471
+#: modules/widgets/polylang-language-switcher.php:469
 msgid "Space Between"
 msgstr "Abstand dazwischen"
 
-#: modules/widgets/polylang-language-switcher.php:502
+#: modules/widgets/polylang-language-switcher.php:500
 msgid "Country Flag"
 msgstr "Landesflagge"
 
-#: modules/widgets/polylang-language-switcher.php:513
-#: modules/widgets/polylang-language-switcher.php:550
-#: modules/widgets/polylang-language-switcher.php:587
+#: modules/widgets/polylang-language-switcher.php:511
+#: modules/widgets/polylang-language-switcher.php:548
+#: modules/widgets/polylang-language-switcher.php:585
 msgid "Margin"
 msgstr "Außenabstand"
 
-#: modules/widgets/polylang-language-switcher.php:540
-#: modules/widgets/polylang-language-switcher.php:577
+#: modules/widgets/polylang-language-switcher.php:538
+#: modules/widgets/polylang-language-switcher.php:575
 msgid "Uppercase"
 msgstr "Großbuchstaben"
 
-#: modules/widgets/polylang-language-switcher.php:566
+#: modules/widgets/polylang-language-switcher.php:564
 msgid "Language Code"
 msgstr "Sprachcode"
 
-#: modules/widgets/polylang-language-switcher.php:599
+#: modules/widgets/polylang-language-switcher.php:597
 msgid "Text before"
 msgstr "Text davor"
 
-#: modules/widgets/polylang-language-switcher.php:607
+#: modules/widgets/polylang-language-switcher.php:605
 msgid "Text after"
 msgstr "Text danach"
 
-#: modules/widgets/polylang-language-switcher.php:619
+#: modules/widgets/polylang-language-switcher.php:617
 msgid "Helpful Information"
 msgstr "Hilfreiche Informationen"
 
-#: modules/widgets/polylang-language-switcher.php:626
+#: modules/widgets/polylang-language-switcher.php:624
 msgid "Country Flags"
 msgstr "Landesflaggen"
 
 #. translators: %1$s - <code>16px</code> (width 16px) / %2$s - <code>11px</code> (height 11px)
-#: modules/widgets/polylang-language-switcher.php:629
+#: modules/widgets/polylang-language-switcher.php:627
 #, php-format
 msgid ""
 "Country flags are by default used from Polylang plugin and have the static "
@@ -373,15 +373,15 @@ msgstr ""
 "Länderflaggen werden standardmäßig vom Polylang-Plugin verwendet und haben "
 "die statische Größe von %1$s breit und %2$s hoch."
 
-#: modules/widgets/polylang-language-switcher.php:636
+#: modules/widgets/polylang-language-switcher.php:634
 msgid "Style"
 msgstr "Stile"
 
-#: modules/widgets/polylang-language-switcher.php:638
+#: modules/widgets/polylang-language-switcher.php:636
 msgid "Tab: \"Active\""
 msgstr "Tab: „Aktiv“"
 
-#: modules/widgets/polylang-language-switcher.php:639
+#: modules/widgets/polylang-language-switcher.php:637
 msgid ""
 "This marks the language of currently viewed content - on the frontend. In "
 "Elementor Editor Panel this could be different."

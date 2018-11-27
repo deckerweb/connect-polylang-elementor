@@ -90,6 +90,8 @@ class DDW_Polylang_Language_Names_Elementor_Dynamic_Tag extends \Elementor\Core\
 	* @since 1.0.0
 	* @access protected
 	*
+	* @uses pll_languages_list()
+	*
 	* @return void
 	*/
 	protected function _register_controls() {

@@ -162,6 +162,8 @@ class Polylang_Language_Switcher extends Widget_Base {
 	 * @since 1.0.0
 	 *
 	 * @access protected
+	 *
+	 * @uses pll_the_languages()
 	 */
 	protected function _register_controls() {
 
@@ -272,10 +274,8 @@ class Polylang_Language_Switcher extends Widget_Base {
 			$dropdown  = [];
 
 			foreach ( $languages as $language ) {
-				
 				$dropdown[ $language[ 'slug' ] ] = $language[ 'name' ];
-
-			}  // end foreach
+			}
 
 			$first_key[ 'all' ] = __( 'All languages', 'connect-polylang-elementor' );
 
