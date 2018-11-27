@@ -11,6 +11,8 @@
 
 Connect Polylang with Elementor - show correct Templates, plus Elementor language switcher widget.
 
+[<img src="https://raw.githubusercontent.com/deckerweb/connect-polylang-elementor/master/assets-repos/github-com/cpel-banner.png" data-canonical-src="https://raw.githubusercontent.com/deckerweb/connect-polylang-elementor/master/assets-repos/github-com/cpel-banner.png" width="772" height="250" />](https://wordpress.org/plugins/connect-polylang-elementor/)
+
 
 ## Description 
 
