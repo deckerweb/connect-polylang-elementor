@@ -15,21 +15,21 @@ Connect Polylang with Elementor - show correct Templates, plus Elementor languag
 ## Description 
 
 
-Connect the Polylang multilingual plugin with Elementor Page Builder: It helps showing the correct language templates, especially with Elementor Pro Theme Builder. Plus: native Polylang Language Switcher Elementor widget, new Dynamic Tags, and Polylang links added to the Elementor Finder feature.
+Connect the Polylang multilingual plugin with Elementor Page Builder: This plugin will make Elementor and Polylang show the correct language templates, especially with Elementor Pro Theme Builder. Plus: native Polylang Language Switcher Elementor widget, new Dynamic Tags, and Polylang links added to the Elementor Finder feature.
 
 
 ### What the Plugin Does 
-* **Show correct Template** (for different languages): It makes it so that Polylang can show the correct Elementor template that will be shown on the front end. Before the plugin, Elementor did not show the correct template.
-* Beyond enabling the Elementor post type in Polylang settings, plus assigning every post/page/template to a language, no further settings needed for these Template tweaks. It just works out of the box. All the heavy lifting happens under the hood.
+* **Shows the correct Template** (for different languages): Connect Polylang Elementor allows Polylang to show the correct Elementor template to be displayed on the front end. Before this plugin, Elementor did not show the correct language (translated) template.
+* Beyond enabling the Elementor post type in Polylang settings, plus assigning every post/page/template to a language, no further settings are needed for these template tweaks. It just works out of the box. All the heavy lifting happens under the hood.
 * **Usage Example:**
   * Make a header template in Elementor, set display conditions in Elementor panel, assign this to one language (English for example)
-  * Make a second header template in Elementor, set NO display conditions for this one, but assign to another Polylang language (Portuguese for example), meaning to link those languages/templates in Polylang
-  * Result: when viewing in frontend the proper English content appears with the English header template, translated content in Portuguese appears with the Portuguese header template
+  * Make a second header template in Elementor, set NO display conditions for this one (by assigning 2 of the same display conditions, you can create a conflict in Elementor), but assign to another Polylang language (Portuguese for example), meaning to link those languages/templates in Polylang.
+  * Result: when viewing in frontend the proper English content appears with the English header template, translated content in Portuguese appears with the Portuguese header template.
   * Go on: The principle is always the same, now add German language, Spanish and so on ;-)
 
 
 ### Plus: Even More Features 
-* **Polylang Language Switcher Widget**: A native Elementor Widget to easily built a nice language switcher menu and have **more styling options** for non-coders at hand
+* **Polylang Language Switcher Widget**: A native Elementor Widget to easily build a nice language switcher menu and have **more styling options** for non-coders at hand
 * **Elementor Finder integration**: Adds Polylang languages, admin settings links, plus support resources as quick jump links to the Elementor Finder feature (Elementor v2.3.0+) - so you can navigate more quickly from whereever you are
 * **Dynamic Tags** in Elementor Pro: Polylang Language Names (all registered/active) / Current Language Name / Current Language Code / Current Language Flag (image) / Current Language URL
 
