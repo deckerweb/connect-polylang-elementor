@@ -42,7 +42,7 @@ function ddw_cpel_add_cpts_to_polylang( $post_types, $is_settings ) {
 			'gp_elements',				// GeneratePress Elements (GP Premium)
 			'jet-theme-core',			// JetThemeCore (Kava Pro/ CrocoBlock)
 			'customify_hook',			// Customify (Customify Pro)
-			'wppf_hooks',				// Page Builder Framework Sections (WPPF Premium)
+			'wpbf_hooks',				// Page Builder Framework Sections (WPBF Premium)
 			'ae_global_templates',		// AnyWhere Elementor plugin
 		)
 	);

@@ -29,22 +29,30 @@ function ddw_cpel_custom_settings_links( $cpel_links ) {
 	if ( current_user_can( 'edit_theme_options' ) ) {
 
 		/** Polylang settings link */
-		$link_polylang = sprintf(
-			'<a class="dashicons-before dashicons-translation" href="%1$s" title="%2$s">%3$s</a>',
-			esc_url( admin_url( 'admin.php?page=mlang' ) ),
-			/* translators: Title attribute for Polylang settings link */
-			esc_html__( 'Polylang Languages Setup', 'connect-polylang-elementor' ),
-			esc_attr_x( 'Languages', 'Link title attribute for Polylang settings', 'connect-polylang-elementor' )
-		);
+		if ( ddw_cpel_is_polylang_active() ) {
+
+			$link_polylang = sprintf(
+				'<a class="dashicons-before dashicons-translation" href="%1$s" title="%2$s">%3$s</a>',
+				esc_url( admin_url( 'admin.php?page=mlang' ) ),
+				/* translators: Title attribute for Polylang settings link */
+				esc_html__( 'Polylang Languages Setup', 'connect-polylang-elementor' ),
+				esc_attr_x( 'Languages', 'Link title attribute for Polylang settings', 'connect-polylang-elementor' )
+			);
+			
+		}  // end if
 
 		/** Elementor My Templates link */
-		$link_elementor = sprintf(
-			'<a class="dashicons-before dashicons-admin-page" href="%1$s" title="%2$s">%3$s</a>',
-			esc_url( admin_url( 'edit.php?post_type=elementor_library' ) ),
-			/* translators: Title attribute for Elementor My Templates link */
-			esc_html__( 'Elementor My Templates', 'connect-polylang-elementor' ),
-			esc_attr_x( 'Templates', 'Link title attribute for Elementor My Templates', 'connect-polylang-elementor' )
-		);
+		if ( ddw_cpel_is_elementor_active() ) {
+
+			$link_elementor = sprintf(
+				'<a class="dashicons-before dashicons-admin-page" href="%1$s" title="%2$s">%3$s</a>',
+				esc_url( admin_url( 'edit.php?post_type=elementor_library' ) ),
+				/* translators: Title attribute for Elementor My Templates link */
+				esc_html__( 'Elementor My Templates', 'connect-polylang-elementor' ),
+				esc_attr_x( 'Templates', 'Link title attribute for Elementor My Templates', 'connect-polylang-elementor' )
+			);
+
+		}  // end if
 
 	}  // end if
 

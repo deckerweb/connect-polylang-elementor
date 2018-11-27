@@ -183,6 +183,13 @@ There are quite a few:
 * Official public release (upcoming)
 
 
+### 0.9.1 - 2018-11-27
+* *First Release Candidate (RC) version*
+* New: Automatic enabling of Elementor My Templates post type for Polylang support
+* Tweak: Code improvements throughout
+* Tweak: Inline documentation and PHP doc improvements
+
+
 ### 0.9.0 - 2018-11-26
 * *Second beta version*
 * New: More settings for Polylang Switcher widget
@@ -200,7 +207,7 @@ There are quite a few:
 * *Second alpha version*
 * New: Added Elementor Finder integration for Polylang plugin links and resources
 * New: Make plugin translateable - added full German translations
-* New: Added Readme file, plus composer.json
+* New: Added Readme file, plus `composer.json`
 * New: First public alpha release on GitHub
 
 
