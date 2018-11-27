@@ -12,6 +12,52 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
+add_filter( 'pll_get_post_types', 'ddw_cpel_add_cpts_to_polylang', 10, 2 );
+/**
+ * Enable Elementor-specific post types automatically for Polylang support.
+ *
+ * @link   https://polylang.pro/doc/filter-reference/
+ *
+ * @since  1.0.0
+ *
+ * @param  bool  $is_settings Whether a post type is already added to Polylang
+ *                            or not.
+ * @param  array $post_types  Holds all Polylang-added post types.
+ * @return array Modified array of post types.
+ */
+function ddw_cpel_add_cpts_to_polylang( $post_types, $is_settings ) {
+
+	/** Bail early if integration not wanted */
+	if ( ! apply_filters( 'cpel/filter/polylang/posttypes_automatic', TRUE ) ) {
+		return;
+	}
+
+	/** Set Elementor-relevant post types */
+	$relevant_types = apply_filters(
+		'cpel/filter/polylang/post_types',
+		array(
+			'elementor_library',		// Elementor
+			'oceanwp_library',			// OceanWP Library
+			'astra-advanced-hook',		// Astra Custom Layouts (Astra Pro)
+			'gp_elements',				// GeneratePress Elements (GP Premium)
+			'jet-theme-core',			// JetThemeCore (Kava Pro/ CrocoBlock)
+			'customify_hook',			// Customify (Customify Pro)
+			'wppf_hooks',				// Page Builder Framework Sections (WPPF Premium)
+			'ae_global_templates',		// AnyWhere Elementor plugin
+		)
+	);
+
+	/** Add all post types to Polylang */
+	foreach ( $relevant_types as $relevant_type ) {
+		$post_types[ $relevant_type ] = $relevant_type;
+	}
+
+	/** Return modified post types list for Polylang */
+	return $post_types;
+
+}  // end function
+
+
 add_action( 'parse_query', 'ddw_cpel_polylang_elementor_library_conditions_parse_query', 1 );
 /**
  * Fix for Elementor template conditions not compatible with Polylang (you need
@@ -30,8 +76,8 @@ add_action( 'parse_query', 'ddw_cpel_polylang_elementor_library_conditions_parse
 function ddw_cpel_polylang_elementor_library_conditions_parse_query( $query ) {
 
 	if ( is_admin() && ! empty( $query->query_vars[ 'post_type' ] ) && 'elementor_library' === $query->query_vars[ 'post_type' ]
-	     && ! empty( $query->query_vars[ 'meta_key' ] )
-	     && '_elementor_conditions' === $query->query_vars[ 'meta_key' ]
+		 && ! empty( $query->query_vars[ 'meta_key' ] )
+		 && '_elementor_conditions' === $query->query_vars[ 'meta_key' ]
 	) {
 		$query->set( 'lang', '' );
 	}
@@ -41,8 +87,8 @@ function ddw_cpel_polylang_elementor_library_conditions_parse_query( $query ) {
 
 add_filter( 'elementor/theme/get_location_templates/template_id', 'ddw_cpel_change_template_based_on_language' );
 /**
- * Filter Elementor conditions system: Change Elementor template based on a set
- *   language in Polylang plugin.
+ * Filter Elementor conditions system: Change Elementor template based on an
+ *   assigned language in Polylang plugin.
  *
  * @link   https://github.com/pojome/elementor/issues/4839
  *
