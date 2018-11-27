@@ -1,0 +1,23 @@
+# Composer
+vendor/**/.git
+vendor/
+composer.lock
+composer.phar
+/composer.lock
+
+# Grunt
+node_modules/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# SVN
+.svn
+
+# General
+/phpunit.xml
+/phpcs.xml
+logs/
