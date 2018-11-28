@@ -11,7 +11,7 @@
  * Plugin Name:       Polylang Connect for Elementor
  * Plugin URI:        https://github.com/deckerweb/connect-polylang-elementor
  * Description:       Connect the Polylang multilingual plugin with Elementor Page Builder: This plugin will make Elementor and Polylang show the correct language templates, especially with Elementor Pro Theme Builder. Plus: native Polylang Language Switcher Elementor widget, new Dynamic Tags, and Polylang links added to the Elementor Finder feature.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            David Decker - DECKERWEB
  * Author URI:        https://deckerweb.de/
  * License:           GPL-2.0-or-later
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.0.0
  */
 /** Plugin version */
-define( 'CPEL_PLUGIN_VERSION', '1.0.0' );
+define( 'CPEL_PLUGIN_VERSION', '1.1.0' );
 
 /** File */
 define( 'CPEL__FILE__', __FILE__ );
