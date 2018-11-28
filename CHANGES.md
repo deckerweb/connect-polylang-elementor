@@ -1,4 +1,4 @@
-# Connect Polylang Elementor
+# Polylang Connect for Elementor
 
 **General Info**
 
@@ -13,9 +13,9 @@
 ## Changelog of the Plugin
 
 
-### 1.0.0 - 2018-11-??
+### 1.0.0 - 2018-11-28
 
-* Official public release (upcoming)
+* Official public release on WordPress.org
 
 
 ### 0.9.1 - 2018-11-27

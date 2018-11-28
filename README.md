@@ -21,7 +21,7 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 
 
 ### What the Plugin Does 
-* **Shows the correct Template** (for different languages): Connect Polylang Elementor allows Polylang to show the correct Elementor template to be displayed on the front end. Before this plugin, Elementor did not show the correct language (translated) template.
+* **Shows the correct Template** (for different languages): Polylang Connect for Elementor allows Polylang to show the correct Elementor template to be displayed on the front end. Before this plugin, Elementor did not show the correct language (translated) template.
 * Beyond enabling the Elementor post type in Polylang settings, plus assigning every post/page/template to a language, no further settings are needed for these template tweaks. It just works out of the box. All the heavy lifting happens under the hood.
 * **Usage Example:**
   * Make a header template in Elementor, set display conditions in Elementor panel, assign this to one language (English for example)
@@ -46,7 +46,7 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 * German (`de_DE`) - always included
 * German formal (`de_DE_formal`) - always included
 * `.pot` file (`connect-polylang-elementor.pot`) for translators is also always included :)
-* Easy plugin translation platform with GlotPress tool: [Translate "Connect Polylang Elementor"...](https://translate.wordpress.org/projects/wp-plugins/connect-polylang-elementor)
+* Easy plugin translation platform with GlotPress tool: [Translate "Polylang Connect for Elementor"...](https://translate.wordpress.org/projects/wp-plugins/connect-polylang-elementor)
 
 
 ### Feedback 
@@ -126,7 +126,7 @@ This plugin has NO settings page, as it does not need one. All it does works jus
 ### Is Polylang Pro supported?
 
 Yes, it is! :)
-All features of "Connect Polylang Elementor" work with both, *Polylang* (free) AND *Polylang Pro* (Premium).
+All features of "Polylang Connect for Elementor" work with both, *Polylang* (free) AND *Polylang Pro* (Premium).
 
 
 
@@ -164,7 +164,7 @@ There are quite a few:
 * German (de_DE): Deutsch - immer dabei! :-)
 * For custom and update-safe language files please upload them to `/wp-content/languages/connect-polylang-elementor/` (just create this folder) - This enables you to use fully custom translations that won't be overridden on plugin updates. Also, complete custom English wording is possible with that as well, just use a language file like `connect-polylang-elementor-en_US.mo/.po` to achieve that (for creating one see the following tools).
 
-**Easy WordPress.org plugin translation platform with GlotPress platform:** [**Translate "Connect Polylang Elementor"...**](https://translate.wordpress.org/projects/wp-plugins/connect-polylang-elementor)
+**Easy WordPress.org plugin translation platform with GlotPress platform:** [**Translate "Polylang Connect for Elementor"...**](https://translate.wordpress.org/projects/wp-plugins/connect-polylang-elementor)
 
 *Note:* All my plugins are internationalized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating and validating I recommend the awesome ["Poedit Editor"](https://www.poedit.net/), which works fine on Windows, macOS and Linux.
 
@@ -172,8 +172,12 @@ There are quite a few:
 
 ## Screenshots 
 
-### 1. ---
-[missing image]
+### 1. Language Switcher Widget - Content settings (Note: MORE plugin screenshots soon!)
+![Language Switcher Widget - Content settings (Note: MORE plugin screenshots soon!)](https://ps.w.org/connect-polylang-elementor/assets/screenshot-1.png)
+
+
+### 1. Language Switcher Widget - Styling options (Note: MORE plugin screenshots soon!)
+![Language Switcher Widget - Styling options (Note: MORE plugin screenshots soon!)](https://ps.w.org/connect-polylang-elementor/assets/screenshot-2.png)
 
 
 
@@ -181,8 +185,8 @@ There are quite a few:
 ## Changelog 
 
 
-### 1.0.0 - 2018-11-??
-* Official public release (upcoming)
+### 1.0.0 - 2018-11-28
+* Official public release on WordPress.org
 
 
 ### 0.9.1 - 2018-11-27
@@ -228,7 +232,7 @@ Just released into the wild.
 
 
 ## Donate 
-Enjoy using *Connect Polylang Elementor*? [**Please consider making a donation**](https://www.paypal.me/deckerweb) to support the project's continued development.
+Enjoy using *Polylang Connect for Elementor*? [**Please consider making a donation**](https://www.paypal.me/deckerweb) to support the project's continued development.
 
 
 ## Credits
