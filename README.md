@@ -145,6 +145,16 @@ In the Polylang Switcher Elementor widget there are typography settings availabl
 
 
 
+### Is Elementor plugin needed?
+
+Yes, it is. Otherwise this connect plugin won't do anything. Elementor is available for free on WordPress.org.
+
+The Elementor Pro Add-On plugin is needed for the Theme Builder capabilities (for example Header templates), plus the feature of "Dynamic Tags". So it is highly recommended. But if it is not installed/ activated, the depending features from the connect plugin won't even load. So it is all optional.
+
+The language switcher widget only needs Elementor base plugin to work ;-)
+
+
+
 ### Other recommended plugins for multilingual websites?
 
 There are quite a few:
