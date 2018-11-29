@@ -17,7 +17,7 @@ Connect Polylang with Elementor - show correct Templates, plus Elementor languag
 ## Description 
 
 
-Connect the Polylang multilingual plugin with Elementor Page Builder: This plugin will make Elementor and Polylang show the correct language templates, especially with Elementor Pro Theme Builder. Plus: native Polylang Language Switcher Elementor widget, new Dynamic Tags, and Polylang links added to the Elementor Finder feature.
+Connect the Polylang multilingual plugin with Elementor Page Builder: This plugin will make Elementor and Polylang **show the correct language templates**, especially with Elementor Pro Theme Builder. Plus: native **Polylang Language Switcher Elementor widget**, new Dynamic Tags, and Polylang links added to the **Elementor Finder** feature.
 
 
 ### What the Plugin Does 
@@ -28,6 +28,7 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
   * Make a second header template in Elementor, set NO display conditions for this one (by assigning 2 of the same display conditions, you can create a conflict in Elementor), but assign to another Polylang language (Portuguese for example), meaning to link those languages/templates in Polylang.
   * Result: when viewing in frontend the proper English content appears with the English header template, translated content in Portuguese appears with the Portuguese header template.
   * Go on: The principle is always the same, now add German language, Spanish and so on ;-)
+  * [See **live demo** on co-author's own website](https://passion4fashion.pt/) // [Screenshot gallery](https://www.dropbox.com/sh/3i9tuh76etmhl1a/AADm_4L_aesp8Q9ss5NXuSiMa?dl=0)
 
 
 ### Plus: Even More Features 
@@ -97,6 +98,16 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 
 
 ## Frequently Asked Questions 
+
+
+### Is there a live demo?
+
+Yes, there is.
+
+[**See live demo on co-author's own website**](https://passion4fashion.pt/)
+
+[Plus: *bigger* versions of the above screenshots are in this external gallery ;-)](https://www.dropbox.com/sh/3i9tuh76etmhl1a/AADm_4L_aesp8Q9ss5NXuSiMa?dl=0)
+
 
 
 ### Correct Elementor template does not show up?
@@ -190,6 +201,45 @@ There are quite a few:
 ![Language Switcher Widget - Styling options (Note: MORE plugin screenshots soon!)](https://ps.w.org/connect-polylang-elementor/assets/screenshot-2.png)
 
 
+ööööööööööööö
+
+
+### 1. Ensure that my templates is ticked in PolyLang post types and Taxonomies. Although the plugin will automatically tick this for you 😊
+![Ensure that my templates is ticked in PolyLang post types and Taxonomies. Although the plugin will automatically tick this for you 😊](https://ps.w.org/connect-polylang-elementor/assets/screenshot-1.png)
+
+
+### 2. Header Template in Elementor showing that they have both been translated
+![Header Template in Elementor showing that they have both been translated](https://ps.w.org/connect-polylang-elementor/assets/screenshot-2.png)
+
+
+### 3. PolyLang Widget in Elementor under Site
+![PolyLang Widget in Elementor under Site](https://ps.w.org/connect-polylang-elementor/assets/screenshot-3.png)
+
+
+### 4. PolyLang Widget options in Elementor
+![PolyLang Widget options in Elementor](https://ps.w.org/connect-polylang-elementor/assets/screenshot-4.png)
+
+
+### 5. PolyLang Widget Styling Options in Elementor
+![PolyLang Widget Styling Options in Elementor](https://ps.w.org/connect-polylang-elementor/assets/screenshot-5.png)
+
+
+### 6. Set your primary language display conditions for your primary language
+![kkkk](https://ps.w.org/connect-polylang-elementor/assets/screenshot-6.png)
+
+
+### 7. DO NOT SET A DISPLAY CONDITION FOR ANY OTHER LANGUAGE ---> PolyLang will do this for you. Save without conditions
+![Set your primary language display conditions for your primary language](https://ps.w.org/connect-polylang-elementor/assets/screenshot-7.png)
+
+
+### 8. (1/2) Working language header templates on the front end. Styled by the widget. Previously this was not an option in PolyLang. (other than editing the menu options) PolyLang users could not display language codes but now they can 😉. Thanks to Polylang Connect for Elementor.
+![(1/2) Working language header templates on the front end. Styled by the widget. Previously this was not an option in PolyLang. (other than editing the menu options) PolyLang users could not display language codes but now they can 😉. Thanks to Polylang Connect for Elementor.](https://ps.w.org/connect-polylang-elementor/assets/screenshot-8.png)
+
+
+### 9. (2/2) Working language header templates on the front end. Styled by the widget. Previously this was not an option in PolyLang. (other than editing the menu options) PolyLang users could not display language codes but now they can 😉. Thanks to Polylang Connect for Elementor.
+![(2/2) Working language header templates on the front end. Styled by the widget. Previously this was not an option in PolyLang. (other than editing the menu options) PolyLang users could not display language codes but now they can 😉. Thanks to Polylang Connect for Elementor.](https://ps.w.org/connect-polylang-elementor/assets/screenshot-9.png)
+
+
 
 
 ## Changelog 
@@ -254,4 +304,5 @@ Credit where credit is due. The following code/ classes, all licensed under the 
 ## Plugin Links 
 * [Translations (WP GlotPress Platform)](https://translate.wordpress.org/projects/wp-plugins/connect-polylang-elementor)
 * [User support forums](https://wordpress.org/support/plugin/connect-polylang-elementor)
+* [Polylang Users Facebook Group](https://www.facebook.com/groups/polylang.users/)
 * [DECKERWEB WordPress Plugins Facebook Group](https://www.facebook.com/groups/deckerweb.wordpress.plugins/)
