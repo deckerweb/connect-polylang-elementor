@@ -193,16 +193,6 @@ There are quite a few:
 
 ## Screenshots 
 
-### 1. Language Switcher Widget - Content settings (Note: MORE plugin screenshots soon!)
-![Language Switcher Widget - Content settings (Note: MORE plugin screenshots soon!)](https://ps.w.org/connect-polylang-elementor/assets/screenshot-1.png)
-
-
-### 1. Language Switcher Widget - Styling options (Note: MORE plugin screenshots soon!)
-![Language Switcher Widget - Styling options (Note: MORE plugin screenshots soon!)](https://ps.w.org/connect-polylang-elementor/assets/screenshot-2.png)
-
-
-ööööööööööööö
-
 
 ### 1. Ensure that my templates is ticked in PolyLang post types and Taxonomies. Although the plugin will automatically tick this for you 😊
 ![Ensure that my templates is ticked in PolyLang post types and Taxonomies. Although the plugin will automatically tick this for you 😊](https://ps.w.org/connect-polylang-elementor/assets/screenshot-1.png)
