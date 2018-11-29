@@ -6,7 +6,8 @@
 * [Translate the plugin](https://translate.wordpress.org/projects/wp-plugins/connect-polylang-elementor)
 * [**Donate** for the further development & support of the plugin](https://www.paypal.me/deckerweb)
 * [Plugin's documentation & FAQ](https://wordpress.org/plugins/connect-polylang-elementor/#faq)
-* [Facebook Community User Group](https://www.facebook.com/groups/deckerweb.wordpress.plugins/)
+* [Polylang Users Facebook Group](https://www.facebook.com/groups/polylang.users/)
+* [Facebook Community User Group Deckerweb Plugins](https://www.facebook.com/groups/deckerweb.wordpress.plugins/)
 * [Facebook Info Page for Deckerweb Plugins](https://www.facebook.com/deckerweb.wordpress.plugins/)
 
 
