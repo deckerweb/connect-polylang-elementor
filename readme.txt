@@ -181,6 +181,7 @@ There are quite a few:
 
 = 1.1.0 - 2018-12-?? =
 * New: Extend Elementor "My Templates" post type list table with views for every language defined in Polylang
+* New: On frontend, add the current active language's locale as (prefixed and sanitized) body class (this can help styling projects more easily)
 
 
 = 1.0.0 - 2018-11-28 =
