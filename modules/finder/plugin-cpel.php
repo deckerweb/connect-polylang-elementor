@@ -59,7 +59,7 @@ class DDW_CPEL_Plugin_Finder_Category extends \Elementor\Core\Common\Modules\Fin
 			'title'       => _x( 'Plugin FAQ', 'Title in Elementor Finder', 'connect-polylang-elementor' ),
 			'url'         => ddw_cpel_get_info_url( 'url_wporg_faq' ),
 			'icon'        => 'info',
-			'keywords'    => [ 'help', 'docs', 'documentation', 'faq', 'knowledge base', 'plugin' ],
+			'keywords'    => [ 'help', 'docs', 'documentation', 'faq', 'knowledge base', 'plugin', 'polylang', 'connect', 'elementor' ],
 			'description' => __( 'FAQ and Documentation', 'connect-polylang-elementor' ),
 			'actions'     => [
 				[
@@ -75,7 +75,7 @@ class DDW_CPEL_Plugin_Finder_Category extends \Elementor\Core\Common\Modules\Fin
 			'title'       => _x( 'Plugin Support Forum', 'Title in Elementor Finder', 'connect-polylang-elementor' ),
 			'url'         => ddw_cpel_get_info_url( 'url_wporg_forum' ),
 			'icon'        => 'comments',
-			'keywords'    => [ 'support', 'forum', 'wordpress.org', 'help', 'plugin' ],
+			'keywords'    => [ 'support', 'forum', 'wordpress.org', 'help', 'plugin', 'polylang', 'connect', 'elementor' ],
 			'description' => __( 'Free support on WordPress.org', 'connect-polylang-elementor' ),
 			'actions'     => [
 				[
@@ -91,7 +91,7 @@ class DDW_CPEL_Plugin_Finder_Category extends \Elementor\Core\Common\Modules\Fin
 			'title'       => _x( 'Plugin Translations', 'Title in Elementor Finder', 'connect-polylang-elementor' ),
 			'url'         => ddw_cpel_get_info_url( 'url_translate' ),
 			'icon'        => 'exchange',
-			'keywords'    => [ 'translate', 'translations', 'wordpress.org', 'glotpress', 'plugin' ],
+			'keywords'    => [ 'translate', 'translations', 'wordpress.org', 'glotpress', 'plugin', 'polylang', 'connect', 'elementor' ],
 			'description' => __( 'Translate this plugin on WordPress.org', 'connect-polylang-elementor' ),
 			'actions'     => [
 				[
