@@ -123,6 +123,7 @@ function ddw_cpel_setup_plugin() {
 		new \DDW_Connect_Polylang_Elementor\Register_Widget();
 
 		require_once( CPEL_PLUGIN_DIR . 'modules/connect/languages-views.php' );
+		require_once( CPEL_PLUGIN_DIR . 'modules/connect/frontend.php' );
 
 		/** Load features that require Elementor Pro */
 		if ( ddw_cpel_is_elementor_pro_active() ) {
