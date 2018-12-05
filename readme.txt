@@ -179,6 +179,10 @@ There are quite a few:
 
 == Changelog ==
 
+= 1.1.0 - 2018-12-?? =
+* New: Extend Elementor "My Templates" post type list table with views for every language defined in Polylang
+
+
 = 1.0.0 - 2018-11-28 =
 * Official public release on WordPress.org
 
@@ -218,6 +222,9 @@ There are quite a few:
 
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+???
 
 = 1.0.0 =
 Just released into the wild.
