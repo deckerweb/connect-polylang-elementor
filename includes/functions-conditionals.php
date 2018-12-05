@@ -82,3 +82,17 @@ function ddw_cpel_is_polylang_free_active() {
 	return ddw_cpel_is_polylang_active() && ! ddw_cpel_is_polylang_pro_active();
 
 }  // end function
+
+
+/**
+ * Is Lingotek Translation plugin active or not?
+ *
+ * @since  1.1.0
+ *
+ * @return bool TRUE if plugin is active, FALSE otherwise.
+ */
+function ddw_cpel_is_lingotek_active() {
+
+	return defined( 'LINGOTEK_VERSION' );
+
+}  // end function
