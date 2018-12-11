@@ -3,7 +3,7 @@
 **Donate link:** https://www.paypal.me/deckerweb  
 **Tags:** elementor, polylang, multilingual, language switcher, languages, templates, widget, finder, dynamic tags, deckerweb  
 **Requires at least:** 4.7  
-**Tested up to:** 4.9.8  
+**Tested up to:** 5.0.0  
 **Requires PHP:** 5.6  
 **Stable tag:** 1.0.0  
 **License:** GPL-2.0-or-later  
@@ -18,6 +18,9 @@ Connect Polylang with Elementor - show correct Templates, plus Elementor languag
 
 
 Connect the Polylang multilingual plugin with Elementor Page Builder: This plugin will make Elementor and Polylang **show the correct language templates**, especially with Elementor Pro Theme Builder. Plus: native **Polylang Language Switcher Elementor widget**, new Dynamic Tags, and Polylang links added to the **Elementor Finder** feature.
+
+[![Video of Plugin's Live Demo and Walkthrough](https://img.youtube.com/vi/tMmJ6sdMdxw/0.jpg)](https://www.youtube.com/watch?v=tMmJ6sdMdxw)
+[**original video link**](https://www.youtube.com/watch?v=tMmJ6sdMdxw) *by plugin developer David Decker*
 
 
 ### What the Plugin Does 
