@@ -3,11 +3,7 @@
 **Donate link:** https://www.paypal.me/deckerweb  
 **Tags:** elementor, polylang, multilingual, language switcher, languages, templates, widget, finder, dynamic tags, deckerweb  
 **Requires at least:** 4.7  
-<<<<<<< HEAD
-**Tested up to:** 5.0.0  
-=======
 **Tested up to:** 5.0  
->>>>>>> origin/master
 **Requires PHP:** 5.6  
 **Stable tag:** 1.1.0  
 **License:** GPL-2.0-or-later  
@@ -18,7 +14,7 @@ Connect Polylang with Elementor - show correct Templates, plus Elementor languag
 [<img src="https://raw.githubusercontent.com/deckerweb/connect-polylang-elementor/master/assets-repos/github-com/cpel-banner.png" data-canonical-src="https://raw.githubusercontent.com/deckerweb/connect-polylang-elementor/master/assets-repos/github-com/cpel-banner.png" width="772" height="250" />](https://wordpress.org/plugins/connect-polylang-elementor/)
 
 
-## Description 
+## Description
 
 
 Connect the Polylang multilingual plugin with Elementor Page Builder: This plugin will make Elementor and Polylang **show the correct language templates**, especially with Elementor Pro Theme Builder. Plus: native **Polylang Language Switcher Elementor widget**, new Dynamic Tags, and Polylang links added to the **Elementor Finder** feature.
@@ -27,7 +23,7 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 [**original video link**](https://www.youtube.com/watch?v=tMmJ6sdMdxw) *by plugin developer David Decker*
 
 
-### What the Plugin Does 
+### What the Plugin Does
 * **Shows the correct Template** (for different languages): Polylang Connect for Elementor allows Polylang to show the correct Elementor template to be displayed on the front end. Before this plugin, Elementor did not show the correct language (translated) template.
 * Beyond enabling the Elementor post type in Polylang settings, plus assigning every post/page/template to a language, no further settings are needed for these template tweaks. It just works out of the box. All the heavy lifting happens under the hood.
 * **Usage Example:**
@@ -38,18 +34,18 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
   * [See **live demo** on co-author's own website](https://passion4fashion.pt/) // [Screenshot gallery](https://www.dropbox.com/sh/3i9tuh76etmhl1a/AADm_4L_aesp8Q9ss5NXuSiMa?dl=0)
 
 
-### Plus: Even More Features 
+### Plus: Even More Features
 * **Polylang Language Switcher Widget**: A native Elementor Widget to easily build a nice language switcher menu and have **more styling options** for non-coders at hand
 * **Elementor Finder integration**: Adds Polylang languages, admin settings links, plus support resources as quick jump links to the Elementor Finder feature (Elementor v2.3.0+) - so you can navigate more quickly from whereever you are
 * **Dynamic Tags** in Elementor Pro: Polylang Language Names (all registered/active) / Current Language Name / Current Language Code / Current Language Flag (image) / Current Language URL
 
 
-### Further Plugin Info 
+### Further Plugin Info
 * More features might be added in the future.
 * Community collaboration between David Decker and Brad Johnson, and more code coming from the Elementor/Polylang community
 
 
-### Translations 
+### Translations
 * English (default, `en_US`) - always included
 * German (`de_DE`) - always included
 * German formal (`de_DE_formal`) - always included
@@ -57,12 +53,12 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 * Easy plugin translation platform with GlotPress tool: [Translate "Polylang Connect for Elementor"...](https://translate.wordpress.org/projects/wp-plugins/connect-polylang-elementor)
 
 
-### Feedback 
+### Feedback
 * I am open for your suggestions and feedback - Thank you for using or trying out one of my plugins!
 * Join our [**Facebook User Community Support Group**](https://www.facebook.com/groups/deckerweb.wordpress.plugins/)
 
 
-### My Other Plugins 
+### My Other Plugins
 * [**Toolbar Extras for Elementor - WordPress Admin Bar Enhanced**](https://wordpress.org/plugins/connect-polylang-elementor/)
 * [**Builder Template Categories - for WordPress Page Builders**](https://wordpress.org/plugins/builder-template-categories/)
 * [**Simple Download Manager for WP Document Revisions**](https://wordpress.org/plugins/wpdr-simple-downloads/)
@@ -76,10 +72,10 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 
 
 
-## Installation 
+## Installation
 
 
-### Minimum Requirements 
+### Minimum Requirements
 
 * WordPress version 4.7 or higher
 * [Elementor](https://wordpress.org/plugins/elementor/) and [Polylang](https://wordpress.org/plugins/polylang/) plugins - free versions from WordPress.org Plugin Directory
@@ -88,13 +84,13 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 * MySQL version 5.0 or higher
 
 
-### We Recommend Your Host Supports at least: 
+### We Recommend Your Host Supports at least:
 
 * PHP version 7.0 or higher
 * MySQL version 5.6 or higher / or MariaDB 10 or higher
 
 
-### Installation 
+### Installation
 
 1. Install using the WordPress built-in Plugin installer (via **Plugins > Add New** - search for `connect polylang elementor`), or extract the ZIP file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
@@ -105,7 +101,7 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 
 
 
-## Frequently Asked Questions 
+## Frequently Asked Questions
 
 
 ### Is there a live demo?
@@ -187,7 +183,7 @@ There are quite a few:
 
 
 
-### More info on Translations? 
+### More info on Translations?
 
 * English - default, always included
 * German (de_DE): Deutsch - immer dabei! :-)
@@ -199,7 +195,7 @@ There are quite a few:
 
 
 
-## Screenshots 
+## Screenshots
 
 
 ### 1. Ensure that my templates is ticked in PolyLang post types and Taxonomies. Although the plugin will automatically tick this for you 😊
@@ -240,7 +236,7 @@ There are quite a few:
 
 
 
-## Changelog 
+## Changelog
 
 
 ### 1.0.0 - 2018-11-28
@@ -282,14 +278,14 @@ There are quite a few:
 
 
 
-## Upgrade Notice 
+## Upgrade Notice
 
 
-### 1.0.0 
+### 1.0.0
 Just released into the wild.
 
 
-## Donate 
+## Donate
 Enjoy using *Polylang Connect for Elementor*? [**Please consider making a donation**](https://www.paypal.me/deckerweb) to support the project's continued development.
 
 
@@ -299,7 +295,7 @@ Credit where credit is due. The following code/ classes, all licensed under the 
 * Polylang Switcher class (Elementor Widget) and its CSS based on widget from plugin "Language Switcher for Elementor" by Solitweb (GPLv2 or later)
 
 
-## Plugin Links 
+## Plugin Links
 * [Translations (WP GlotPress Platform)](https://translate.wordpress.org/projects/wp-plugins/connect-polylang-elementor)
 * [User support forums](https://wordpress.org/support/plugin/connect-polylang-elementor)
 * [Polylang Users Facebook Group](https://www.facebook.com/groups/polylang.users/)
