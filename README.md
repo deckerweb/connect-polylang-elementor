@@ -3,7 +3,7 @@
 **Donate link:** https://www.paypal.me/deckerweb  
 **Tags:** elementor, polylang, multilingual, language switcher, languages, templates, widget, finder, dynamic tags, deckerweb  
 **Requires at least:** 4.7  
-**Tested up to:** 4.9.8  
+**Tested up to:** 5.0.0  
 **Requires PHP:** 5.6  
 **Stable tag:** 1.1.0  
 **License:** GPL-2.0-or-later  

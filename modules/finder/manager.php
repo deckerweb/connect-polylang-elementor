@@ -19,6 +19,9 @@ add_action( 'elementor/finder/categories/init', 'ddw_cpel_elementor_finder_add_i
  *   - CPEL (this plugin)
  *
  * @since 1.0.0
+ * @since 1.1.0 Added Lingotek plugin support.
+ *
+ * @uses ddw_cpel_is_lingotek_active()
  *
  * @param object $categories_manager
  */
@@ -33,5 +36,14 @@ function ddw_cpel_elementor_finder_add_items( $categories_manager ) {
 
 	/** Add the our own CPEL Plugin category */
 	$categories_manager->add_category( 'connect-polylang-elementor', new DDW_CPEL_Plugin_Finder_Category() );
+
+	if ( ddw_cpel_is_lingotek_active() ) {
+
+		/** Add the Lingotek Translation Plugin category */
+		require_once( CPEL_PLUGIN_DIR . 'modules/finder/plugin-lingotek.php' );
+
+		$categories_manager->add_category( 'lingotek-plugin', new DDW_Lingotek_Plugin_Finder_Category() );
+
+	}  // end if
 
 }  // end function
