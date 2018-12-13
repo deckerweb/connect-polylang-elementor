@@ -3,7 +3,7 @@
 **Donate link:** https://www.paypal.me/deckerweb  
 **Tags:** elementor, polylang, multilingual, language switcher, languages, templates, widget, finder, dynamic tags, deckerweb  
 **Requires at least:** 4.7  
-**Tested up to:** 5.0.0  
+**Tested up to:** 5.0  
 **Requires PHP:** 5.6  
 **Stable tag:** 1.0.0  
 **License:** GPL-2.0-or-later  
@@ -61,6 +61,7 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 ### My Other Plugins 
 * [**Toolbar Extras for Elementor - WordPress Admin Bar Enhanced**](https://wordpress.org/plugins/connect-polylang-elementor/)
 * [**Builder Template Categories - for WordPress Page Builders**](https://wordpress.org/plugins/builder-template-categories/)
+* [**Simple Download Manager for WP Document Revisions**](https://wordpress.org/plugins/wpdr-simple-downloads/)
 * [Genesis What's New Info](https://wordpress.org/plugins/genesis-whats-new-info/)
 * [Genesis Layout Extras](https://wordpress.org/plugins/genesis-layout-extras/)
 * [Genesis Widgetized Not Found & 404](https://wordpress.org/plugins/genesis-widgetized-notfound/)
