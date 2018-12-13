@@ -3,7 +3,11 @@ Contributors: daveshine, p4fbradjohnson, deckerweb, wpautobahn
 Donate link: https://www.paypal.me/deckerweb
 Tags: elementor, polylang, multilingual, language switcher, languages, templates, widget, finder, dynamic tags, deckerweb
 Requires at least: 4.7
+<<<<<<< HEAD
 Tested up to: 5.0.0
+=======
+Tested up to: 5.0
+>>>>>>> origin/master
 Requires PHP: 5.6
 Stable tag: 1.1.0
 License: GPL-2.0-or-later
@@ -14,6 +18,8 @@ Connect Polylang with Elementor - show correct Templates, plus Elementor languag
 == Description ==
 
 Connect the Polylang multilingual plugin with Elementor Page Builder: This plugin will make Elementor and Polylang **show the correct language templates**, especially with Elementor Pro Theme Builder. Plus: native **Polylang Language Switcher Elementor widget**, new Dynamic Tags, and Polylang links added to the **Elementor Finder** feature.
+
+https://www.youtube.com/watch?v=tMmJ6sdMdxw
 
 = What the Plugin Does =
 * **Shows the correct Template** (for different languages): Polylang Connect for Elementor allows Polylang to show the correct Elementor template to be displayed on the front end. Before this plugin, Elementor did not show the correct language (translated) template.
@@ -48,6 +54,7 @@ Connect the Polylang multilingual plugin with Elementor Page Builder: This plugi
 = My Other Plugins =
 * [**Toolbar Extras for Elementor - WordPress Admin Bar Enhanced**](https://wordpress.org/plugins/connect-polylang-elementor/)
 * [**Builder Template Categories - for WordPress Page Builders**](https://wordpress.org/plugins/builder-template-categories/)
+* [**Simple Download Manager for WP Document Revisions**](https://wordpress.org/plugins/wpdr-simple-downloads/)
 * [Genesis What's New Info](https://wordpress.org/plugins/genesis-whats-new-info/)
 * [Genesis Layout Extras](https://wordpress.org/plugins/genesis-layout-extras/)
 * [Genesis Widgetized Not Found & 404](https://wordpress.org/plugins/genesis-widgetized-notfound/)
