@@ -677,7 +677,10 @@ class Polylang_Language_Switcher extends Widget_Base {
 		] );
 
 		/** Get the available languages for a switcher */
-		$languages = pll_the_languages( array( 'raw' => 1 ) );
+		$languages = '';
+		if ( function_exists( 'pll_the_languages' ) ) {
+			$languages = pll_the_languages( array( 'raw' => 1 ) );
+		}
 
 		/** If there are language - render output */
 		if ( ! empty( $languages ) ) {
