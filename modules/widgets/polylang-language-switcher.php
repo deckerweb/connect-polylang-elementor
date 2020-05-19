@@ -10,6 +10,7 @@ use Elementor\Scheme_Color;
 use Elementor\Scheme_Typography;
 use Elementor\Group_Control_Border;
 use Elementor\Group_Control_Typography;
+use function function_exists;
 
 
 /**
@@ -270,26 +271,28 @@ class Polylang_Language_Switcher extends Widget_Base {
 		);
 
 			/** Create language drop-down for the select control */
+		if ( function_exists( 'pll_the_languages' ) ) {
 			$languages = pll_the_languages( array( 'raw' => 1 ) );
 			$dropdown  = [];
 
 			foreach ( $languages as $language ) {
-				$dropdown[ $language[ 'slug' ] ] = $language[ 'name' ];
+				$dropdown[ $language['slug'] ] = $language['name'];
 			}
 
-			$first_key[ 'all' ] = __( 'All languages', 'connect-polylang-elementor' );
+			$first_key['all'] = __( 'All languages', 'connect-polylang-elementor' );
 
 			$dropdown = array_merge( $first_key, $dropdown );
 
-		$this->add_control(
-			'plsfe_widget_display',
-			[
-				'label'   => __( 'Display widget for:', 'connect-polylang-elementor' ),
-				'type'    => Controls_Manager::SELECT,
-				'default' => 'all',
-				'options' => $dropdown,
-			]
-		);
+			$this->add_control(
+				'plsfe_widget_display',
+				[
+					'label'   => __( 'Display widget for:', 'connect-polylang-elementor' ),
+					'type'    => Controls_Manager::SELECT,
+					'default' => 'all',
+					'options' => $dropdown,
+				]
+			);
+		}
 
 		$this->end_controls_section();
 
@@ -674,7 +677,10 @@ class Polylang_Language_Switcher extends Widget_Base {
 		] );
 
 		/** Get the available languages for a switcher */
-		$languages = pll_the_languages( array( 'raw' => 1 ) );
+		$languages = '';
+		if ( function_exists( 'pll_the_languages' ) ) {
+			$languages = pll_the_languages( array( 'raw' => 1 ) );
+		}
 
 		/** If there are language - render output */
 		if ( ! empty( $languages ) ) {
@@ -706,7 +712,7 @@ class Polylang_Language_Switcher extends Widget_Base {
 					echo ( $language[ 'current_lang' ] ) ? '<a href="' . $language[ 'url' ] . '" class="plsfe-item plsfe-item__active">' : '<a href="' . $language[ 'url' ] . '" class="plsfe-item">';
 
 						echo $settings[ 'show_country_flag' ] ? '<span class="plsfe-country-flag"><img src="' . $language[ 'flag' ] . '" alt="' . $language_code . '" width="16" height="11" /></span>' : '';
-						
+
 						echo $settings[ 'show_language_name' ] ? '<span class="plsfe-language-name">' . $language_name . '</span>' : '';
 
 						echo $settings[ 'before_language_code' ] ?: '';

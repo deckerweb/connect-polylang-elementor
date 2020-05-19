@@ -74,45 +74,62 @@ class DDW_Polylang_Plugin_Finder_Category extends \Elementor\Core\Common\Modules
 		$action_icon = 'eye';
 
 		/** List all setup languages */
-		$languages = pll_languages_list( array( 'fields' => FALSE ) );
+		if ( function_exists( 'pll_languages_list' ) ) {
+			$languages = pll_languages_list( array( 'fields' => false ) );
 
-		foreach ( $languages as $lang_data ) {
+			foreach ( $languages as $lang_data ) {
 
-			$items[ 'website-language-' . $lang_data->slug ] = [
-				'title'       => $string_website_lang . $lang_data->name,
-				'url'         => esc_url( $lang_data->home_url ),
-				'icon'        => 'eye',
-				'keywords'    => [ 'website', 'polylang', 'language', $lang_data->name, $lang_data->slug, 'country', $lang_data->locale ],
-				'description' => __( 'View website in this language', 'connect-polylang-elementor' ),
-				'actions'     => [
-					[
-						'name' => 'edit',
-						'url'  => esc_url_raw( admin_url( 'admin.php?page=mlang&pll_action=edit&lang=' . $lang_data->term_id ) ),
-						'icon' => 'edit',
+				$items[ 'website-language-' . $lang_data->slug ] = [
+					'title'       => $string_website_lang . $lang_data->name,
+					'url'         => esc_url( $lang_data->home_url ),
+					'icon'        => 'eye',
+					'keywords'    => [
+						'website',
+						'polylang',
+						'language',
+						$lang_data->name,
+						$lang_data->slug,
+						'country',
+						$lang_data->locale
 					],
-				],
-			];
-
-		}  // end foreach
-
-		foreach ( $languages as $lang_data ) {
-
-			$items[ 'polylang-language-' . $lang_data->slug ] = [
-				'title'       => $string_polylang_lang . $lang_data->name,
-				'url'         => esc_url_raw( admin_url( 'admin.php?page=mlang&pll_action=edit&lang=' . $lang_data->term_id ) ),
-				'icon'        => 'edit',
-				'keywords'    => [ 'polylang', 'language', $lang_data->name, $lang_data->slug, 'country', $lang_data->locale ],
-				'description' => __( 'Edit this language', 'connect-polylang-elementor' ),
-				'actions'     => [
-					[
-						'name' => $action_name,
-						'url'  => esc_url( $lang_data->home_url ),
-						'icon' => $action_icon,
+					'description' => __( 'View website in this language', 'connect-polylang-elementor' ),
+					'actions'     => [
+						[
+							'name' => 'edit',
+							'url'  => esc_url_raw( admin_url( 'admin.php?page=mlang&pll_action=edit&lang=' . $lang_data->term_id ) ),
+							'icon' => 'edit',
+						],
 					],
-				],
-			];
+				];
 
-		}  // end foreach
+			}  // end foreach
+
+			foreach ( $languages as $lang_data ) {
+
+				$items[ 'polylang-language-' . $lang_data->slug ] = [
+					'title'       => $string_polylang_lang . $lang_data->name,
+					'url'         => esc_url_raw( admin_url( 'admin.php?page=mlang&pll_action=edit&lang=' . $lang_data->term_id ) ),
+					'icon'        => 'edit',
+					'keywords'    => [
+						'polylang',
+						'language',
+						$lang_data->name,
+						$lang_data->slug,
+						'country',
+						$lang_data->locale
+					],
+					'description' => __( 'Edit this language', 'connect-polylang-elementor' ),
+					'actions'     => [
+						[
+							'name' => $action_name,
+							'url'  => esc_url( $lang_data->home_url ),
+							'icon' => $action_icon,
+						],
+					],
+				];
+
+			}  // end foreach
+		}
 
 		/** Settings: Languages setup */
 		$items[ 'languages' ] = [
